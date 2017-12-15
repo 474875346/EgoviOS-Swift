@@ -14,6 +14,22 @@
 		89CF56941FE39D5C00C5F60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CF56921FE39D5C00C5F60D /* LaunchScreen.storyboard */; };
 		89CF569F1FE39D5C00C5F60D /* EgoviOS_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF569E1FE39D5C00C5F60D /* EgoviOS_SwiftTests.swift */; };
 		89CF56AA1FE39D5D00C5F60D /* EgoviOS_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56A91FE39D5D00C5F60D /* EgoviOS_SwiftUITests.swift */; };
+		89CF56C31FE39E3700C5F60D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56B91FE39E3600C5F60D /* BaseViewController.swift */; };
+		89CF56C41FE39E3700C5F60D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56BB1FE39E3600C5F60D /* ViewModel.swift */; };
+		89CF56C51FE39E3700C5F60D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56BD1FE39E3700C5F60D /* Model.swift */; };
+		89CF56C61FE39E3700C5F60D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56BF1FE39E3700C5F60D /* File.swift */; };
+		89CF56C71FE39E3700C5F60D /* HTTPRequestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56C01FE39E3700C5F60D /* HTTPRequestTool.swift */; };
+		89CF56C81FE39E3700C5F60D /* SwiftMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56C11FE39E3700C5F60D /* SwiftMessageManager.swift */; };
+		89CF56C91FE39E3700C5F60D /* UIView+ ViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56C21FE39E3700C5F60D /* UIView+ ViewChainable.swift */; };
+		89CF56CD1FE39E5B00C5F60D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56CB1FE39E5B00C5F60D /* LogInViewController.swift */; };
+		89CF56CE1FE39E5B00C5F60D /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CF56CC1FE39E5B00C5F60D /* LogInViewController.xib */; };
+		89CF56D11FE3A1E000C5F60D /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56CF1FE3A1E000C5F60D /* MessageViewController.swift */; };
+		89CF56D21FE3A1E000C5F60D /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CF56D01FE3A1E000C5F60D /* MessageViewController.xib */; };
+		89CF56D51FE3A1F000C5F60D /* WorktableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56D31FE3A1F000C5F60D /* WorktableViewController.swift */; };
+		89CF56D61FE3A1F000C5F60D /* WorktableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CF56D41FE3A1F000C5F60D /* WorktableViewController.xib */; };
+		89CF56D91FE3A1FD00C5F60D /* AddressBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56D71FE3A1FD00C5F60D /* AddressBookViewController.swift */; };
+		89CF56DA1FE3A1FD00C5F60D /* AddressBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CF56D81FE3A1FD00C5F60D /* AddressBookViewController.xib */; };
+		AD22CB902036130FA4421763 /* Pods_EgoviOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E978744145A220BA2EB7F8D1 /* Pods_EgoviOS_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0A4F6D52BB7C7150CADAF3 /* Pods-EgoviOS-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgoviOS-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		32020B70750EA28CE5838BB6 /* Pods-EgoviOS-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgoviOS-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		89CF56861FE39D5C00C5F60D /* EgoviOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EgoviOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CF56891FE39D5C00C5F60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89CF568B1FE39D5C00C5F60D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +65,22 @@
 		89CF56A51FE39D5C00C5F60D /* EgoviOS-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EgoviOS-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CF56A91FE39D5D00C5F60D /* EgoviOS_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoviOS_SwiftUITests.swift; sourceTree = "<group>"; };
 		89CF56AB1FE39D5D00C5F60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89CF56B91FE39E3600C5F60D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		89CF56BB1FE39E3600C5F60D /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		89CF56BD1FE39E3700C5F60D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		89CF56BF1FE39E3700C5F60D /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		89CF56C01FE39E3700C5F60D /* HTTPRequestTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestTool.swift; sourceTree = "<group>"; };
+		89CF56C11FE39E3700C5F60D /* SwiftMessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMessageManager.swift; sourceTree = "<group>"; };
+		89CF56C21FE39E3700C5F60D /* UIView+ ViewChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ ViewChainable.swift"; sourceTree = "<group>"; };
+		89CF56CB1FE39E5B00C5F60D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		89CF56CC1FE39E5B00C5F60D /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
+		89CF56CF1FE3A1E000C5F60D /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		89CF56D01FE3A1E000C5F60D /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
+		89CF56D31FE3A1F000C5F60D /* WorktableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorktableViewController.swift; sourceTree = "<group>"; };
+		89CF56D41FE3A1F000C5F60D /* WorktableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorktableViewController.xib; sourceTree = "<group>"; };
+		89CF56D71FE3A1FD00C5F60D /* AddressBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookViewController.swift; sourceTree = "<group>"; };
+		89CF56D81FE3A1FD00C5F60D /* AddressBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressBookViewController.xib; sourceTree = "<group>"; };
+		E978744145A220BA2EB7F8D1 /* Pods_EgoviOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EgoviOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD22CB902036130FA4421763 /* Pods_EgoviOS_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +116,8 @@
 				89CF569D1FE39D5C00C5F60D /* EgoviOS-SwiftTests */,
 				89CF56A81FE39D5D00C5F60D /* EgoviOS-SwiftUITests */,
 				89CF56871FE39D5C00C5F60D /* Products */,
+				AC786DFD142513ABF3950E4E /* Pods */,
+				98E4C722943CA8CDDC6901CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +134,13 @@
 		89CF56881FE39D5C00C5F60D /* EgoviOS-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				89CF56891FE39D5C00C5F60D /* AppDelegate.swift */,
-				89CF568B1FE39D5C00C5F60D /* ViewController.swift */,
+				89CF56DE1FE3A4E500C5F60D /* 总工作台 */,
+				89CF56CA1FE39E4A00C5F60D /* 登录 */,
+				89CF56B81FE39E3600C5F60D /* Base */,
+				89CF56BC1FE39E3700C5F60D /* Model */,
+				89CF56BE1FE39E3700C5F60D /* Tool */,
+				89CF56BA1FE39E3600C5F60D /* ViewModel */,
+				89CF56B71FE39E1800C5F60D /* Main */,
 				89CF568D1FE39D5C00C5F60D /* Main.storyboard */,
 				89CF56901FE39D5C00C5F60D /* Assets.xcassets */,
 				89CF56921FE39D5C00C5F60D /* LaunchScreen.storyboard */,
@@ -125,6 +167,113 @@
 			path = "EgoviOS-SwiftUITests";
 			sourceTree = "<group>";
 		};
+		89CF56B71FE39E1800C5F60D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56891FE39D5C00C5F60D /* AppDelegate.swift */,
+				89CF568B1FE39D5C00C5F60D /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		89CF56B81FE39E3600C5F60D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56B91FE39E3600C5F60D /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		89CF56BA1FE39E3600C5F60D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56BB1FE39E3600C5F60D /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89CF56BC1FE39E3700C5F60D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56BD1FE39E3700C5F60D /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		89CF56BE1FE39E3700C5F60D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56BF1FE39E3700C5F60D /* File.swift */,
+				89CF56C01FE39E3700C5F60D /* HTTPRequestTool.swift */,
+				89CF56C11FE39E3700C5F60D /* SwiftMessageManager.swift */,
+				89CF56C21FE39E3700C5F60D /* UIView+ ViewChainable.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		89CF56CA1FE39E4A00C5F60D /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56CB1FE39E5B00C5F60D /* LogInViewController.swift */,
+				89CF56CC1FE39E5B00C5F60D /* LogInViewController.xib */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		89CF56DB1FE3A21E00C5F60D /* 通知 */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56CF1FE3A1E000C5F60D /* MessageViewController.swift */,
+				89CF56D01FE3A1E000C5F60D /* MessageViewController.xib */,
+			);
+			path = "通知";
+			sourceTree = "<group>";
+		};
+		89CF56DC1FE3A22C00C5F60D /* 工作台 */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56D31FE3A1F000C5F60D /* WorktableViewController.swift */,
+				89CF56D41FE3A1F000C5F60D /* WorktableViewController.xib */,
+			);
+			path = "工作台";
+			sourceTree = "<group>";
+		};
+		89CF56DD1FE3A23C00C5F60D /* 通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56D71FE3A1FD00C5F60D /* AddressBookViewController.swift */,
+				89CF56D81FE3A1FD00C5F60D /* AddressBookViewController.xib */,
+			);
+			path = "通讯录";
+			sourceTree = "<group>";
+		};
+		89CF56DE1FE3A4E500C5F60D /* 总工作台 */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56DB1FE3A21E00C5F60D /* 通知 */,
+				89CF56DC1FE3A22C00C5F60D /* 工作台 */,
+				89CF56DD1FE3A23C00C5F60D /* 通讯录 */,
+			);
+			path = "总工作台";
+			sourceTree = "<group>";
+		};
+		98E4C722943CA8CDDC6901CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E978744145A220BA2EB7F8D1 /* Pods_EgoviOS_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC786DFD142513ABF3950E4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A0A4F6D52BB7C7150CADAF3 /* Pods-EgoviOS-Swift.debug.xcconfig */,
+				32020B70750EA28CE5838BB6 /* Pods-EgoviOS-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +281,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89CF56AE1FE39D5D00C5F60D /* Build configuration list for PBXNativeTarget "EgoviOS-Swift" */;
 			buildPhases = (
+				A43A6F874BFF8CD185E2CB1B /* [CP] Check Pods Manifest.lock */,
 				89CF56821FE39D5C00C5F60D /* Sources */,
 				89CF56831FE39D5C00C5F60D /* Frameworks */,
 				89CF56841FE39D5C00C5F60D /* Resources */,
+				95E7D0AB3561ED3FD2D929D9 /* [CP] Embed Pods Frameworks */,
+				AE527A476AE3E245DE6C8879 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,8 +384,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CF56CE1FE39E5B00C5F60D /* LogInViewController.xib in Resources */,
+				89CF56DA1FE3A1FD00C5F60D /* AddressBookViewController.xib in Resources */,
+				89CF56D21FE3A1E000C5F60D /* MessageViewController.xib in Resources */,
 				89CF56941FE39D5C00C5F60D /* LaunchScreen.storyboard in Resources */,
 				89CF56911FE39D5C00C5F60D /* Assets.xcassets in Resources */,
+				89CF56D61FE3A1F000C5F60D /* WorktableViewController.xib in Resources */,
 				89CF568F1FE39D5C00C5F60D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +410,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95E7D0AB3561ED3FD2D929D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/EZSwiftExtensions/EZSwiftExtensions.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/FileBrowser/FileBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZSwiftExtensions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FileBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A43A6F874BFF8CD185E2CB1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EgoviOS-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE527A476AE3E245DE6C8879 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89CF56821FE39D5C00C5F60D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CF56D91FE3A1FD00C5F60D /* AddressBookViewController.swift in Sources */,
+				89CF56C71FE39E3700C5F60D /* HTTPRequestTool.swift in Sources */,
+				89CF56C81FE39E3700C5F60D /* SwiftMessageManager.swift in Sources */,
+				89CF56C51FE39E3700C5F60D /* Model.swift in Sources */,
+				89CF56C61FE39E3700C5F60D /* File.swift in Sources */,
 				89CF568C1FE39D5C00C5F60D /* ViewController.swift in Sources */,
 				89CF568A1FE39D5C00C5F60D /* AppDelegate.swift in Sources */,
+				89CF56D51FE3A1F000C5F60D /* WorktableViewController.swift in Sources */,
+				89CF56C91FE39E3700C5F60D /* UIView+ ViewChainable.swift in Sources */,
+				89CF56D11FE3A1E000C5F60D /* MessageViewController.swift in Sources */,
+				89CF56C41FE39E3700C5F60D /* ViewModel.swift in Sources */,
+				89CF56CD1FE39E5B00C5F60D /* LogInViewController.swift in Sources */,
+				89CF56C31FE39E3700C5F60D /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,11 +683,13 @@
 		};
 		89CF56AF1FE39D5D00C5F60D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0A4F6D52BB7C7150CADAF3 /* Pods-EgoviOS-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VALQ39Y9P2;
 				INFOPLIST_FILE = "EgoviOS-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zyx.EgoviOS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,11 +700,13 @@
 		};
 		89CF56B01FE39D5D00C5F60D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32020B70750EA28CE5838BB6 /* Pods-EgoviOS-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VALQ39Y9P2;
 				INFOPLIST_FILE = "EgoviOS-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zyx.EgoviOS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
