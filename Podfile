@@ -14,6 +14,9 @@ pod 'EZSwiftExtensions' # Foundation和UIKit的有用扩展的集合(Swift)
 pod 'FileBrowser'#文件管理(Swift)
 pod 'RxSwift'#响应式编程(Swift)
 pod 'RxCocoa'#响应式编程(Swift)
+pod 'NSObject+Rx'
+pod 'RxDataSources'
+pod 'Reusable'
 pod 'Moya'#抽象网络请求(Swift)
 pod 'Moya/RxSwift'#网络请求桥接(Swift)
 pod 'Moya-ObjectMapper/RxSwift'#模型转换(Swift)

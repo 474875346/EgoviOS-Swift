@@ -14,6 +14,7 @@ let URLString = "http://47.95.5.138:8888/app"
 let HttpTool = MoyaProvider<HTTPTool>()
 enum HTTPTool {
     case LogIn(Name:String,Psw:String)
+    case getArticleDetailIndex(page:Int,type:String)
 }
 extension HTTPTool : TargetType {
     var headers: [String : String]? {
@@ -27,15 +28,18 @@ extension HTTPTool : TargetType {
     
     public var path: String {
         switch self {
-        case .LogIn(_,_):
+        case .LogIn:
             return "/login"
+        case .getArticleDetailIndex:
+            return "/api/article/getArticleDetailIndex"
         }
     }
     
     public var method: Moya.Method {
         switch self {
-        case .LogIn(_,_):
+        case .LogIn,.getArticleDetailIndex:
             return .post
+            
         }
     }
     
@@ -43,12 +47,14 @@ extension HTTPTool : TargetType {
         switch self {
         case .LogIn(let name,let psw):
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"username":name,"password":psw,"os":"ios","brand":"apple","registrationId":""])
+        case .getArticleDetailIndex(let page, let type):
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"pageNumber":page,"type":type])
         }
     }
     
     public var sampleData: Data {
         switch self {
-        case .LogIn(_,_):
+        case .LogIn,.getArticleDetailIndex:
             return "".data(using: String.Encoding.utf8)!
         }
     }

@@ -24,6 +24,9 @@ extension UIColor {
         if cString.hasPrefix("#"){
             cString = (cString as NSString).substring(from: 1)
         }
+        if cString.hasPrefix("0X"){
+            cString = (cString as NSString).substring(from: 2)
+        }
         
         //字符chuan截取
         var range = NSRange()

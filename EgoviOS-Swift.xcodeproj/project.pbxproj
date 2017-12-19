@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		894B65661FE75C3000FA17F2 /* MessageRefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */; };
+		899C39851FE7A83500AC6653 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C39831FE7A83500AC6653 /* MessageTableViewCell.swift */; };
+		899C39861FE7A83500AC6653 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899C39841FE7A83500AC6653 /* MessageTableViewCell.xib */; };
 		89CF568A1FE39D5C00C5F60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56891FE39D5C00C5F60D /* AppDelegate.swift */; };
 		89CF568C1FE39D5C00C5F60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF568B1FE39D5C00C5F60D /* ViewController.swift */; };
 		89CF568F1FE39D5C00C5F60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CF568D1FE39D5C00C5F60D /* Main.storyboard */; };
@@ -29,6 +32,9 @@
 		89CF56D61FE3A1F000C5F60D /* WorktableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CF56D41FE3A1F000C5F60D /* WorktableViewController.xib */; };
 		89CF56D91FE3A1FD00C5F60D /* AddressBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56D71FE3A1FD00C5F60D /* AddressBookViewController.swift */; };
 		89CF56DA1FE3A1FD00C5F60D /* AddressBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CF56D81FE3A1FD00C5F60D /* AddressBookViewController.xib */; };
+		89CF56E31FE3A9CA00C5F60D /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56E21FE3A9CA00C5F60D /* MessageViewModel.swift */; };
+		89CF56E51FE3B13900C5F60D /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56E41FE3B13900C5F60D /* BaseModel.swift */; };
+		89CF56E71FE3B71D00C5F60D /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56E61FE3B71D00C5F60D /* MessageModel.swift */; };
 		AD22CB902036130FA4421763 /* Pods_EgoviOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E978744145A220BA2EB7F8D1 /* Pods_EgoviOS_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +58,9 @@
 /* Begin PBXFileReference section */
 		2A0A4F6D52BB7C7150CADAF3 /* Pods-EgoviOS-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgoviOS-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		32020B70750EA28CE5838BB6 /* Pods-EgoviOS-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgoviOS-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRefreshViewModel.swift; sourceTree = "<group>"; };
+		899C39831FE7A83500AC6653 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		899C39841FE7A83500AC6653 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		89CF56861FE39D5C00C5F60D /* EgoviOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EgoviOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CF56891FE39D5C00C5F60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89CF568B1FE39D5C00C5F60D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +89,9 @@
 		89CF56D41FE3A1F000C5F60D /* WorktableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorktableViewController.xib; sourceTree = "<group>"; };
 		89CF56D71FE3A1FD00C5F60D /* AddressBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookViewController.swift; sourceTree = "<group>"; };
 		89CF56D81FE3A1FD00C5F60D /* AddressBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressBookViewController.xib; sourceTree = "<group>"; };
+		89CF56E21FE3A9CA00C5F60D /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		89CF56E41FE3B13900C5F60D /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		89CF56E61FE3B71D00C5F60D /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		E978744145A220BA2EB7F8D1 /* Pods_EgoviOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EgoviOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -180,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				89CF56B91FE39E3600C5F60D /* BaseViewController.swift */,
+				89CF56E41FE3B13900C5F60D /* BaseModel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -223,8 +236,10 @@
 		89CF56DB1FE3A21E00C5F60D /* 通知 */ = {
 			isa = PBXGroup;
 			children = (
-				89CF56CF1FE3A1E000C5F60D /* MessageViewController.swift */,
-				89CF56D01FE3A1E000C5F60D /* MessageViewController.xib */,
+				89E20BD11FE76D1900E6C300 /* V */,
+				89CF56E11FE3A9AD00C5F60D /* M */,
+				89CF56E01FE3A9A400C5F60D /* VM */,
+				89CF56DF1FE3A99D00C5F60D /* C */,
 			);
 			path = "通知";
 			sourceTree = "<group>";
@@ -255,6 +270,41 @@
 				89CF56DD1FE3A23C00C5F60D /* 通讯录 */,
 			);
 			path = "总工作台";
+			sourceTree = "<group>";
+		};
+		89CF56DF1FE3A99D00C5F60D /* C */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56CF1FE3A1E000C5F60D /* MessageViewController.swift */,
+				89CF56D01FE3A1E000C5F60D /* MessageViewController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		89CF56E01FE3A9A400C5F60D /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56E21FE3A9CA00C5F60D /* MessageViewModel.swift */,
+				894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		89CF56E11FE3A9AD00C5F60D /* M */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56E61FE3B71D00C5F60D /* MessageModel.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		89E20BD11FE76D1900E6C300 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				899C39831FE7A83500AC6653 /* MessageTableViewCell.swift */,
+				899C39841FE7A83500AC6653 /* MessageTableViewCell.xib */,
+			);
+			path = V;
 			sourceTree = "<group>";
 		};
 		98E4C722943CA8CDDC6901CC /* Frameworks */ = {
@@ -385,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CF56CE1FE39E5B00C5F60D /* LogInViewController.xib in Resources */,
+				899C39861FE7A83500AC6653 /* MessageTableViewCell.xib in Resources */,
 				89CF56DA1FE3A1FD00C5F60D /* AddressBookViewController.xib in Resources */,
 				89CF56D21FE3A1E000C5F60D /* MessageViewController.xib in Resources */,
 				89CF56941FE39D5C00C5F60D /* LaunchScreen.storyboard in Resources */,
@@ -420,6 +471,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/EZSwiftExtensions/EZSwiftExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/FileBrowser/FileBrowser.framework",
@@ -429,10 +481,13 @@
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
@@ -443,6 +498,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZSwiftExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FileBrowser.framework",
@@ -452,10 +508,13 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
@@ -510,11 +569,16 @@
 				89CF56D91FE3A1FD00C5F60D /* AddressBookViewController.swift in Sources */,
 				89CF56C71FE39E3700C5F60D /* HTTPRequestTool.swift in Sources */,
 				89CF56C81FE39E3700C5F60D /* SwiftMessageManager.swift in Sources */,
+				89CF56E71FE3B71D00C5F60D /* MessageModel.swift in Sources */,
 				89CF56C51FE39E3700C5F60D /* Model.swift in Sources */,
+				89CF56E31FE3A9CA00C5F60D /* MessageViewModel.swift in Sources */,
 				89CF56C61FE39E3700C5F60D /* File.swift in Sources */,
 				89CF568C1FE39D5C00C5F60D /* ViewController.swift in Sources */,
 				89CF568A1FE39D5C00C5F60D /* AppDelegate.swift in Sources */,
 				89CF56D51FE3A1F000C5F60D /* WorktableViewController.swift in Sources */,
+				894B65661FE75C3000FA17F2 /* MessageRefreshViewModel.swift in Sources */,
+				899C39851FE7A83500AC6653 /* MessageTableViewCell.swift in Sources */,
+				89CF56E51FE3B13900C5F60D /* BaseModel.swift in Sources */,
 				89CF56C91FE39E3700C5F60D /* UIView+ ViewChainable.swift in Sources */,
 				89CF56D11FE3A1E000C5F60D /* MessageViewController.swift in Sources */,
 				89CF56C41FE39E3700C5F60D /* ViewModel.swift in Sources */,
