@@ -8,7 +8,6 @@
 
 import UIKit
 import ObjectMapper
-import RxDataSources
 class MessageModel: Mappable {
     var status: Int?
     var msg:String?
@@ -30,7 +29,7 @@ class MessageData: Mappable {
     var summary:String?
     var category:String?
     var time:String?
-    var id:String?
+    var id:NSInteger?
     var statuColor:String?
     var sendUser:String?
     var title:String?

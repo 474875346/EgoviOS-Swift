@@ -22,6 +22,7 @@ class MessageViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindView()
+        MessageTableView.backgroundColor = UIColor.rgb(234, 235, 236, 1.0)
         MessageTableView.register(UINib.init(nibName: "MessageTableViewCell", bundle: nil), forCellReuseIdentifier: "MessageCell")
         MessageTableView.mj_header.beginRefreshing()
     }
@@ -39,7 +40,14 @@ extension MessageViewController {
             cell.urgent.textColor = UIColor(hexString: element.statuColor!)
             cell.selectionStyle = UITableViewCellSelectionStyle(rawValue: 0)!
             }.disposed(by: disposeBag)
-        reashVM.refreshStatus.asObservable().subscribe(onNext: {[weak self] status in
+        MessageTableView.rx.modelSelected(MessageData.self).subscribe(onNext: { (model) in
+            let vc = InformTheDetailsViewController()
+            vc.articleId = "\(model.id!)"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }, onError: { (error) in
+            print(error.localizedDescription)
+        }).disposed(by: disposeBag)
+         reashVM.refreshStatus.asObservable().subscribe(onNext: {[weak self] status in
             switch status {
             case .beingHeaderRefresh:
                 self?.MessageTableView.mj_header.beginRefreshing()

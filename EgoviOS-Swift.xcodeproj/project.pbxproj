@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		894B65661FE75C3000FA17F2 /* MessageRefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */; };
+		8988578F1FE8BA2500160D3F /* InformTheDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988578D1FE8BA2500160D3F /* InformTheDetailsViewController.swift */; };
+		898857901FE8BA2500160D3F /* InformTheDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8988578E1FE8BA2500160D3F /* InformTheDetailsViewController.xib */; };
+		898857951FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898857931FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift */; };
+		898857961FE8BF1300160D3F /* InformTheDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898857941FE8BF1300160D3F /* InformTheDetailsTableViewCell.xib */; };
+		8988579A1FE8C1A300160D3F /* InformTheDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898857991FE8C1A300160D3F /* InformTheDetailsViewModel.swift */; };
+		8988579D1FE8C1C000160D3F /* InformTheDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988579C1FE8C1C000160D3F /* InformTheDetailsModel.swift */; };
+		898857A21FE9063500160D3F /* AttachmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898857A11FE9063500160D3F /* AttachmentViewController.swift */; };
 		899C39851FE7A83500AC6653 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C39831FE7A83500AC6653 /* MessageTableViewCell.swift */; };
 		899C39861FE7A83500AC6653 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899C39841FE7A83500AC6653 /* MessageTableViewCell.xib */; };
 		89CF568A1FE39D5C00C5F60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56891FE39D5C00C5F60D /* AppDelegate.swift */; };
@@ -59,6 +66,13 @@
 		2A0A4F6D52BB7C7150CADAF3 /* Pods-EgoviOS-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgoviOS-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		32020B70750EA28CE5838BB6 /* Pods-EgoviOS-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgoviOS-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRefreshViewModel.swift; sourceTree = "<group>"; };
+		8988578D1FE8BA2500160D3F /* InformTheDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformTheDetailsViewController.swift; sourceTree = "<group>"; };
+		8988578E1FE8BA2500160D3F /* InformTheDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformTheDetailsViewController.xib; sourceTree = "<group>"; };
+		898857931FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformTheDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		898857941FE8BF1300160D3F /* InformTheDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformTheDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		898857991FE8C1A300160D3F /* InformTheDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformTheDetailsViewModel.swift; sourceTree = "<group>"; };
+		8988579C1FE8C1C000160D3F /* InformTheDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformTheDetailsModel.swift; sourceTree = "<group>"; };
+		898857A11FE9063500160D3F /* AttachmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentViewController.swift; sourceTree = "<group>"; };
 		899C39831FE7A83500AC6653 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		899C39841FE7A83500AC6653 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		89CF56861FE39D5C00C5F60D /* EgoviOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EgoviOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +135,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8988578C1FE8B99300160D3F /* 通知详情 */ = {
+			isa = PBXGroup;
+			children = (
+				898857981FE8C18B00160D3F /* M */,
+				898857971FE8C17F00160D3F /* VM */,
+				898857921FE8BF0600160D3F /* V */,
+				898857911FE8BA2900160D3F /* C */,
+			);
+			path = "通知详情";
+			sourceTree = "<group>";
+		};
+		898857911FE8BA2900160D3F /* C */ = {
+			isa = PBXGroup;
+			children = (
+				8988578D1FE8BA2500160D3F /* InformTheDetailsViewController.swift */,
+				8988578E1FE8BA2500160D3F /* InformTheDetailsViewController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		898857921FE8BF0600160D3F /* V */ = {
+			isa = PBXGroup;
+			children = (
+				898857931FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift */,
+				898857941FE8BF1300160D3F /* InformTheDetailsTableViewCell.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		898857971FE8C17F00160D3F /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				898857991FE8C1A300160D3F /* InformTheDetailsViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		898857981FE8C18B00160D3F /* M */ = {
+			isa = PBXGroup;
+			children = (
+				8988579C1FE8C1C000160D3F /* InformTheDetailsModel.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		8988579E1FE905F100160D3F /* 附件查看 */ = {
+			isa = PBXGroup;
+			children = (
+				898857A11FE9063500160D3F /* AttachmentViewController.swift */,
+			);
+			path = "附件查看";
+			sourceTree = "<group>";
+		};
 		89CF567D1FE39D5C00C5F60D = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +303,7 @@
 		89CF56DB1FE3A21E00C5F60D /* 通知 */ = {
 			isa = PBXGroup;
 			children = (
+				8988578C1FE8B99300160D3F /* 通知详情 */,
 				89E20BD11FE76D1900E6C300 /* V */,
 				89CF56E11FE3A9AD00C5F60D /* M */,
 				89CF56E01FE3A9A400C5F60D /* VM */,
@@ -265,6 +333,7 @@
 		89CF56DE1FE3A4E500C5F60D /* 总工作台 */ = {
 			isa = PBXGroup;
 			children = (
+				8988579E1FE905F100160D3F /* 附件查看 */,
 				89CF56DB1FE3A21E00C5F60D /* 通知 */,
 				89CF56DC1FE3A22C00C5F60D /* 工作台 */,
 				89CF56DD1FE3A23C00C5F60D /* 通讯录 */,
@@ -435,9 +504,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CF56CE1FE39E5B00C5F60D /* LogInViewController.xib in Resources */,
+				898857901FE8BA2500160D3F /* InformTheDetailsViewController.xib in Resources */,
 				899C39861FE7A83500AC6653 /* MessageTableViewCell.xib in Resources */,
 				89CF56DA1FE3A1FD00C5F60D /* AddressBookViewController.xib in Resources */,
 				89CF56D21FE3A1E000C5F60D /* MessageViewController.xib in Resources */,
+				898857961FE8BF1300160D3F /* InformTheDetailsTableViewCell.xib in Resources */,
 				89CF56941FE39D5C00C5F60D /* LaunchScreen.storyboard in Resources */,
 				89CF56911FE39D5C00C5F60D /* Assets.xcassets in Resources */,
 				89CF56D61FE3A1F000C5F60D /* WorktableViewController.xib in Resources */,
@@ -566,16 +637,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8988578F1FE8BA2500160D3F /* InformTheDetailsViewController.swift in Sources */,
+				8988579A1FE8C1A300160D3F /* InformTheDetailsViewModel.swift in Sources */,
 				89CF56D91FE3A1FD00C5F60D /* AddressBookViewController.swift in Sources */,
 				89CF56C71FE39E3700C5F60D /* HTTPRequestTool.swift in Sources */,
 				89CF56C81FE39E3700C5F60D /* SwiftMessageManager.swift in Sources */,
 				89CF56E71FE3B71D00C5F60D /* MessageModel.swift in Sources */,
+				898857A21FE9063500160D3F /* AttachmentViewController.swift in Sources */,
 				89CF56C51FE39E3700C5F60D /* Model.swift in Sources */,
 				89CF56E31FE3A9CA00C5F60D /* MessageViewModel.swift in Sources */,
 				89CF56C61FE39E3700C5F60D /* File.swift in Sources */,
 				89CF568C1FE39D5C00C5F60D /* ViewController.swift in Sources */,
 				89CF568A1FE39D5C00C5F60D /* AppDelegate.swift in Sources */,
+				8988579D1FE8C1C000160D3F /* InformTheDetailsModel.swift in Sources */,
 				89CF56D51FE3A1F000C5F60D /* WorktableViewController.swift in Sources */,
+				898857951FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift in Sources */,
 				894B65661FE75C3000FA17F2 /* MessageRefreshViewModel.swift in Sources */,
 				899C39851FE7A83500AC6653 /* MessageTableViewCell.swift in Sources */,
 				89CF56E51FE3B13900C5F60D /* BaseModel.swift in Sources */,
