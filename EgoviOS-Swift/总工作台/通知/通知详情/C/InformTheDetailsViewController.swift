@@ -17,7 +17,7 @@ class InformTheDetailsViewController: BaseViewController {
     @IBOutlet weak var InformTheDetailsTableView: UITableView!
     var articleId = ""
     var model:InformTheDetailsModel?
-    var height:CGFloat?
+    var Height:CGFloat?
     var idx = 0
     let VM = InformTheDetailsViewModel()
     let disposeBag = DisposeBag()
@@ -55,23 +55,23 @@ extension InformTheDetailsViewController {
     }
     
     func ForwardingAndRevert() -> Void {
+        if ( (Zrole == "ROLE_DEPT_SECRET") || (Zrole == "ROLE_DEPT_INFO")) {
+            if model?.data?.status! == "已回复" {
+                ForwardingBtn?.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 40)
+                RevertBtn?.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+            }
+        }
         if model?.data?.status! == "已回复" {
-            footView.snp.makeConstraints({ (make) in
+            footView.snp.remakeConstraints({ (make) in
                 make.height.equalTo(0)
             })
             return
         }
-        
         if ((Zrole == "ROLE_OFFICE_SECRET") || (Zrole == "ROLE_DUTY_SECRET")) {
             
         } else {
             ForwardingBtn?.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
             RevertBtn?.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 40)
-        }
-        if ( (Zrole == "ROLE_DEPT_SECRET") || (Zrole == "ROLE_DEPT_INFO")) {
-            
-        } else {
-            
         }
     }
     
@@ -95,6 +95,7 @@ extension InformTheDetailsViewController {
                 self.rightbtn.isHidden = false
                 self.rightbtn.setTitle("查看回复信息", for: UIControlState(rawValue: 0))
             }
+            self.ForwardingAndRevert()
         }, onError: { (error) in
             print(error.localizedDescription)
             self.ErrorTost()
@@ -115,7 +116,7 @@ extension InformTheDetailsViewController:UITableViewDelegate,UITableViewDataSour
         if indexPath.section == 0 {
             return 84
         } else if indexPath.section == 1 {
-            return height ?? CGFloat()
+            return Height ?? CGFloat()
         } else {
             return 44
         }
@@ -152,7 +153,7 @@ extension InformTheDetailsViewController:UITableViewDelegate,UITableViewDataSour
 }
 extension InformTheDetailsViewController: UIWebViewDelegate {
     func webViewDidFinishLoad(_ webView: UIWebView) {
-        height = webView.sizeThatFits(CGSize.zero).height
+        Height = webView.sizeThatFits(CGSize.zero).height
         if idx <= 2 {
             InformTheDetailsTableView.reloadData()
         }

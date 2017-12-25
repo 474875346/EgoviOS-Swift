@@ -47,10 +47,10 @@ extension MessageRefreshViewModel {
             VM.getArticleDetailIndex(page: self.index, type: self.result).subscribe({ (event) in
                 switch event {
                 case let .next(model):
-                    self.models.value = isReloadData ? model.data! : self.models.value + model.data!
-                    model.status == 200 ? self.SuccessTost(Title: "", Body: "刷新成功") : self.WaringTost(Title: "", Body: model.msg!)
+                    self.models.value = isReloadData ? model.data : self.models.value + model.data
+                    model.status == 200 ? self.SuccessTost(Title: "", Body: "获取数据成功") : self.WaringTost(Title: "", Body: model.msg!)
                     output.refreshStatus.value = isReloadData ? .endHeaderRefresh : .endFooterRefresh
-                    output.refreshStatus.value = model.Isnumber! ? .endFooterRefresh : .noMoreData
+                    output.refreshStatus.value = model.Isnumber ? .endFooterRefresh : .noMoreData
                 case let .error(error):
                     print(error.localizedDescription)
                     self.ErrorTost()

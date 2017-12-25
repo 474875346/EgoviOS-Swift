@@ -11,9 +11,9 @@ import ObjectMapper
 class MessageModel: Mappable {
     var status: Int?
     var msg:String?
-    var data:Array<MessageData>?
+    var data:Array<MessageData> = Array<MessageData>()
     var code:String?
-    var Isnumber:Bool?
+    var Isnumber:Bool = false
     
     required init?(map: Map) {
     }
