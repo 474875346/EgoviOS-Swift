@@ -57,6 +57,8 @@ let ZDept = "dept"
 let Zduty = "duty"
 let ZrealName = "realName"
 let Zcode = "code"
+let Zrole = "\(UserDefauTake(Key: Zcode) ?? String())"
+
 //存数据
 func UserDefaultSave(Key:String,Value:Any?) {
     UserDefaults().set(Value, forKey: Key)

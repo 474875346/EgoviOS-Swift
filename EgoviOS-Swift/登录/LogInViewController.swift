@@ -36,7 +36,7 @@ class LogInViewController: BaseViewController {
                 self.WaringTost(Title: "", Body: model.msg!)
             }
         }, onError: { (error) in
-            print(error.localizedDescription)
+            print(error)
             self.ErrorTost()
         }).disposed(by: disposeBag)
     }

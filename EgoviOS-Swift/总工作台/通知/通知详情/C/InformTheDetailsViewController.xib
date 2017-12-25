@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformTheDetailsViewController" customModule="EgoviOS_Swift" customModuleProvider="target">
             <connections>
                 <outlet property="InformTheDetailsTableView" destination="6Sq-eg-Pjf" id="bxE-K1-Nrt"/>
+                <outlet property="footView" destination="bl1-aV-eNh" id="viR-5a-cDJ"/>
+                <outlet property="rightbtn" destination="cAN-Xs-2CN" id="EdY-TJ-A8N"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,8 +22,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Sq-eg-Pjf">
-                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Sq-eg-Pjf">
+                    <rect key="frame" x="0.0" y="64" width="375" height="563"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="ePv-Jg-VSi"/>
@@ -48,28 +50,49 @@
                             <color key="textColor" red="0.91764705879999997" green="0.92156862750000001" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-Xs-2CN">
+                            <rect key="frame" x="273" y="27" width="92" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="查看发送人员"/>
+                            <connections>
+                                <action selector="RightButton:" destination="-1" eventType="touchUpInside" id="kP3-Ub-m4X"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.29803921570000003" green="0.59215686270000001" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="RVn-NO-0hO" firstAttribute="centerX" secondItem="n66-0s-AGT" secondAttribute="centerX" id="99l-dP-gZw"/>
                         <constraint firstAttribute="height" constant="64" id="P9s-kG-4R9"/>
+                        <constraint firstItem="cAN-Xs-2CN" firstAttribute="centerY" secondItem="RVn-NO-0hO" secondAttribute="centerY" id="c7Z-co-noA"/>
                         <constraint firstItem="awE-TL-3pa" firstAttribute="centerY" secondItem="n66-0s-AGT" secondAttribute="centerY" constant="10" id="ge5-lv-Fv9"/>
                         <constraint firstItem="awE-TL-3pa" firstAttribute="leading" secondItem="n66-0s-AGT" secondAttribute="leading" constant="10" id="kiI-ef-XPD"/>
                         <constraint firstItem="RVn-NO-0hO" firstAttribute="centerY" secondItem="awE-TL-3pa" secondAttribute="centerY" id="mGO-U3-YGS"/>
+                        <constraint firstAttribute="trailing" secondItem="cAN-Xs-2CN" secondAttribute="trailing" constant="10" id="wkP-dn-pmC"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bl1-aV-eNh">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Qbe-qJ-PrS"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="6Sq-eg-Pjf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0N7-SU-UHB"/>
+                <constraint firstAttribute="trailing" secondItem="bl1-aV-eNh" secondAttribute="trailing" id="9oP-4N-hCm"/>
                 <constraint firstItem="6Sq-eg-Pjf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="F4k-4r-bbt"/>
+                <constraint firstItem="bl1-aV-eNh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KZo-SM-HgI"/>
                 <constraint firstItem="6Sq-eg-Pjf" firstAttribute="top" secondItem="n66-0s-AGT" secondAttribute="bottom" id="Pem-wg-g6l"/>
-                <constraint firstAttribute="bottom" secondItem="6Sq-eg-Pjf" secondAttribute="bottom" id="Zc9-2R-heo"/>
+                <constraint firstAttribute="bottom" secondItem="bl1-aV-eNh" secondAttribute="bottom" id="YtP-G3-ctj"/>
+                <constraint firstItem="bl1-aV-eNh" firstAttribute="top" secondItem="6Sq-eg-Pjf" secondAttribute="bottom" id="bQI-AY-P3o"/>
                 <constraint firstAttribute="trailing" secondItem="n66-0s-AGT" secondAttribute="trailing" id="hP1-B1-831"/>
                 <constraint firstItem="n66-0s-AGT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hUY-tq-yHT"/>
                 <constraint firstAttribute="trailing" secondItem="6Sq-eg-Pjf" secondAttribute="trailing" id="hYl-cs-TtO"/>
                 <constraint firstItem="n66-0s-AGT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="z3x-Lz-5Iv"/>
             </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
     <resources>

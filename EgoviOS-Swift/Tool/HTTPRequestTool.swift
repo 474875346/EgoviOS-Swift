@@ -50,11 +50,12 @@ extension HTTPTool : TargetType {
         }
     }
     public var method: Moya.Method {
-        return .get
+        return .post
     }
     public var task: Task {
         switch self {
         case .LogIn(let name,let psw):
+        print(["client":deviceUUID!,"username":name,"password":psw,"os":"ios","brand":"apple","registrationId":""])
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"username":name,"password":psw,"os":"ios","brand":"apple","registrationId":""])
         case .getArticleDetailIndex(let page, let type):
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"pageNumber":page,"type":type])

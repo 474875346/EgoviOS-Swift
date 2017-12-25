@@ -26,6 +26,9 @@ class InformTheDetailsData: Mappable {
     var sendTime:String?
     var datas : Array<InformTheDetailsDatas>?
     var title:String?
+    var status_english:String?
+    var articleDetailSize:Int?
+    var status:String?
     required init?(map: Map) {
     }
     func mapping(map: Map) {
@@ -33,6 +36,9 @@ class InformTheDetailsData: Mappable {
         sendTime           <- map["sendTime"]
         datas         <- map["datas"]
         title         <- map["title"]
+        status_english         <- map["status_english"]
+        articleDetailSize         <- map["articleDetailSize"]
+        status         <- map["status"]
     }
 }
 class InformTheDetailsDatas: Mappable {

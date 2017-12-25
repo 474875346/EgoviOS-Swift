@@ -7,33 +7,79 @@
 //
 
 import UIKit
+import SnapKit
 import RxSwift
 import Alamofire
 import MJRefresh
 class InformTheDetailsViewController: BaseViewController {
+    @IBOutlet weak var footView: UIView!
+    @IBOutlet weak var rightbtn: UIButton!
     @IBOutlet weak var InformTheDetailsTableView: UITableView!
     var articleId = ""
     var model:InformTheDetailsModel?
     var height:CGFloat?
-    var idx = 1
+    var idx = 0
     let VM = InformTheDetailsViewModel()
     let disposeBag = DisposeBag()
+    var ForwardingBtn : UIButton?
+    var RevertBtn : UIButton?
     @IBAction func back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func RightButton(_ sender: UIButton) {
+        if (self.model?.data?.status_english! == "reply") {
+            
+        } else {
+            
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         createUI()
+        Forwarding()
+        Revert()
+        initData()
     }
+}
+extension InformTheDetailsViewController {
+    
+    public func Forwarding() -> Void {
+        ForwardingBtn = CreateUI.Button(title: "转            发", frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH/2, height: 40), backgroundColor: UIColor.red, textColor: UIColor.white, font: 17)
+        footView.addSubview(ForwardingBtn!)
+    }
+    
+    public  func Revert() -> Void {
+        RevertBtn = CreateUI.Button(title: "回            复", frame: CGRect(x: SCREEN_WIDTH/2, y: 0, width: SCREEN_WIDTH/2, height: 40), backgroundColor: UIColor.rgb(76, 171, 253, 1.0), textColor: UIColor.white, font: 17)
+        footView.addSubview(RevertBtn!)
+    }
+    
+    func ForwardingAndRevert() -> Void {
+        if model?.data?.status! == "已回复" {
+            footView.snp.makeConstraints({ (make) in
+                make.height.equalTo(0)
+            })
+            return
+        }
+        
+        if ((Zrole == "ROLE_OFFICE_SECRET") || (Zrole == "ROLE_DUTY_SECRET")) {
+            
+        } else {
+            ForwardingBtn?.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+            RevertBtn?.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 40)
+        }
+        if ( (Zrole == "ROLE_DEPT_SECRET") || (Zrole == "ROLE_DEPT_INFO")) {
+            
+        } else {
+            
+        }
+    }
+    
     public func createUI() -> Void {
         InformTheDetailsTableView.register(UINib.init(nibName: "InformTheDetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "InformTheDetailsCell")
         InformTheDetailsTableView.separatorStyle = UITableViewCellSeparatorStyle(rawValue: 0)!
-        InformTheDetailsTableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
-            self.initData()
-        })
-        InformTheDetailsTableView.mj_header.beginRefreshing()
     }
-    func initData() -> Void {
+    public func initData() -> Void {
         VM.getArticleView(articleId: articleId).subscribe(onNext: { (Model) in
             self.model = Model
             if self.model?.status == 200 {
@@ -41,11 +87,17 @@ class InformTheDetailsViewController: BaseViewController {
             } else {
                 self.WaringTost(Title: "", Body: self.model?.msg! ?? String())
             }
-            self.InformTheDetailsTableView.mj_header.endRefreshing()
+            if (self.model?.data?.articleDetailSize! != 0) {
+                self.rightbtn.isHidden = false
+                self.rightbtn.setTitle("查看发送人员", for: UIControlState(rawValue: 0))
+            }
+            if (self.model?.data?.status_english! == "reply") {
+                self.rightbtn.isHidden = false
+                self.rightbtn.setTitle("查看回复信息", for: UIControlState(rawValue: 0))
+            }
         }, onError: { (error) in
             print(error.localizedDescription)
             self.ErrorTost()
-            self.InformTheDetailsTableView.mj_header.endRefreshing()
         }).disposed(by:disposeBag)
     }
 }
