@@ -28,6 +28,12 @@ enum HTTPTool {
     case getArticleDetailIndex(page:Int,type:String)
     //通知详情
     case getArticleView(articleId:String)
+    //通知转发&回复
+    case downArticle(id:String,reply:String,persons:String)
+    //通知参会人员
+    case viewReply(id:NSInteger)
+    //通知查看发送人员
+    case viewDown(id:NSInteger)
 }
 extension HTTPTool : TargetType {
     var headers: [String : String]? {
@@ -47,6 +53,12 @@ extension HTTPTool : TargetType {
             return "/api/article/getArticleDetailIndex"
         case .getArticleView:
             return "/api/article/getArticleView"
+        case .downArticle:
+            return "/api/article/downArticle"
+        case .viewReply:
+            return "/api/article/viewReply"
+        case .viewDown:
+            return "/api/article/viewDown"
         }
     }
     public var method: Moya.Method {
@@ -55,12 +67,18 @@ extension HTTPTool : TargetType {
     public var task: Task {
         switch self {
         case .LogIn(let name,let psw):
-        print(["client":deviceUUID!,"username":name,"password":psw,"os":"ios","brand":"apple","registrationId":""])
+            print(["client":deviceUUID!,"username":name,"password":psw,"os":"ios","brand":"apple","registrationId":""])
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"username":name,"password":psw,"os":"ios","brand":"apple","registrationId":""])
         case .getArticleDetailIndex(let page, let type):
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"pageNumber":page,"type":type])
         case .getArticleView(let articleId):
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"articleId":articleId])
+        case .downArticle(let id, let reply, let persons):
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"id":id,"reply":reply,"persons":persons,"mark":"save"])
+        case .viewReply(let id):
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"id":id])
+        case .viewDown(let id):
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"id":id])
         }
     }
     

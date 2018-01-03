@@ -51,6 +51,14 @@ extension UIColor {
         self.init(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1.0)
     }
 }
+
+func ViewBorderRadius(view:UIView, Radius:CGFloat,Width:CGFloat,Color:UIColor) -> Void {
+    view.layer.cornerRadius=Radius
+    view.layer.masksToBounds=true
+    view.layer.borderWidth=Width
+    view.layer.borderColor=Color.cgColor
+}
+
 //取数据的key
 let ZToken = "access_token"
 let ZDept = "dept"

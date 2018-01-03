@@ -29,11 +29,5 @@ extension UIView:ViewChainable {
         }
         return self
     }
-    func LRViewBorderRadius(Radius:CGFloat,Width:CGFloat,Color:UIColor) -> Self {
-        self.layer.cornerRadius=Radius
-        self.layer.masksToBounds=true
-        self.layer.borderWidth=Width
-        self.layer.borderColor=Color.cgColor
-        return self
-    }
 }
+

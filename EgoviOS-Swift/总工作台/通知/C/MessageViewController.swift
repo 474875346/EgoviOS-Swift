@@ -43,11 +43,12 @@ extension MessageViewController {
         MessageTableView.rx.modelSelected(MessageData.self).subscribe(onNext: { (model) in
             let vc = InformTheDetailsViewController()
             vc.articleId = "\(model.id!)"
+            vc.status = self.MessageRefreshVM.result
             self.navigationController?.pushViewController(vc, animated: true)
         }, onError: { (error) in
             print(error.localizedDescription)
         }).disposed(by: disposeBag)
-         reashVM.refreshStatus.asObservable().subscribe(onNext: {[weak self] status in
+        reashVM.refreshStatus.asObservable().subscribe(onNext: {[weak self] status in
             switch status {
             case .beingHeaderRefresh:
                 self?.MessageTableView.mj_header.beginRefreshing()

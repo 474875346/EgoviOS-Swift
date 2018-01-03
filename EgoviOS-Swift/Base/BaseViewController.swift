@@ -21,7 +21,7 @@ extension  BaseViewController {
     //MARK:导航栏背景
     func addNavBackImg() -> Void {
         let NavImg = UIImageView(frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 64))
-        NavImg.backgroundColor = UIColor.init(red: 76, green: 151, blue: 253, alpha: 1.0)
+        NavImg.backgroundColor = UIColor.rgb(76, 151, 253, 1.0)
         self.view.addSubview(NavImg)
     }
     //MARK:导航栏标题
@@ -29,22 +29,28 @@ extension  BaseViewController {
         let NavTitle = UILabel(frame: CGRect(x: 80, y: 20, width: SCREEN_WIDTH-160, height: 44))
         NavTitle.text = Title
         NavTitle.textColor = UIColor.white
-        NavTitle.font = UIFont.systemFont(ofSize: 21)
+        NavTitle.font = UIFont.systemFont(ofSize: 20)
         NavTitle.textAlignment = .center
         self.view.addSubview(NavTitle)
     }
     //MARK:导航栏返回按钮
     func addBackButton() -> Void {
         let BackBtn = UIButton(type: .custom)
-        BackBtn.frame = CGRect(x: 10, y: 20, width: 54, height: 44)
-        let Backimg = UIImage(named: "back")
+        BackBtn.frame = CGRect(x: 10, y: 30, width: 15, height: 20)
+        let Backimg = UIImage(named: "返回")
         BackBtn.setImage(Backimg, for: .normal)
-        BackBtn.imageEdgeInsets = UIEdgeInsets(top: 12, left: 10, bottom: 12, right: 35)
         BackBtn.addTarget(self, action: #selector(BackButton), for: .touchUpInside)
         self.view.addSubview(BackBtn)
     }
     @objc func BackButton() -> Void {
         _ = self.navigationController?.popViewController(animated: true)
+    }
+    func addRightButton(title:String) -> UIButton {
+        let RightBtn = UIButton(type: .custom)
+        RightBtn.frame = CGRect(x: SCREEN_WIDTH - 120, y: 20, width: 115, height: 44)
+        RightBtn.setTitle(title, for: .normal)
+        self.view.addSubview(RightBtn)
+        return RightBtn
     }
     //MARK:成功弹框
     func SuccessTost(Title:String , Body:String) -> Void {

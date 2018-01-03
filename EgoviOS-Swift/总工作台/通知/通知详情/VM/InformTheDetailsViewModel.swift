@@ -16,5 +16,12 @@ class InformTheDetailsViewModel: NSObject {
             .mapObject(InformTheDetailsModel.self)
             .asObservable()
     }
+    func downArticle(id:String,replay:String,persons:String) -> Observable<Model> {
+        return HttpTool
+            .rx
+            .request(.downArticle(id: id, reply: replay, persons: persons))
+            .mapObject(Model.self)
+            .asObservable()
+    }
 }
 

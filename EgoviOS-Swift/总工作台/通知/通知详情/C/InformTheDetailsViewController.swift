@@ -9,29 +9,35 @@
 import UIKit
 import SnapKit
 import RxSwift
+import RxCocoa
 import Alamofire
 import MJRefresh
 class InformTheDetailsViewController: BaseViewController {
     @IBOutlet weak var footView: UIView!
     @IBOutlet weak var rightbtn: UIButton!
     @IBOutlet weak var InformTheDetailsTableView: UITableView!
-    var articleId = ""
-    var model:InformTheDetailsModel?
     var Height:CGFloat?
     var idx = 0
+    var articleId = ""
+    var status = ""
+    var model:InformTheDetailsModel?
     let VM = InformTheDetailsViewModel()
     let disposeBag = DisposeBag()
     var ForwardingBtn : UIButton?
-    var RevertBtn : UIButton?
+    var RevertBtn : UIButton?    
     @IBAction func back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func RightButton(_ sender: UIButton) {
-        if (self.model?.data?.status_english! == "reply") {
-            
+        if (self.model?.data?.status_english! != "reply") {
+            let vc = PeopleRespondViewController()
+            vc.id = NSInteger(articleId)!
+            self.navigationController?.pushViewController(vc, animated: true)
         } else {
-            
+            let vc = AttendeesViewController()
+            vc.id = NSInteger(articleId)!
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     override func viewDidLoad() {
@@ -43,18 +49,55 @@ class InformTheDetailsViewController: BaseViewController {
     }
 }
 extension InformTheDetailsViewController {
-    
+    //MARK:填写回复提示框
+    public func initreplyAlert() -> Void {
+        let alertController = UIAlertController(title: "", message: "请填写回复内容", preferredStyle: .alert)
+        alertController.addTextField(configurationHandler: nil)
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        let okAction = UIAlertAction(title: "确定", style: .default) { (action) in
+            let text = alertController.textFields![0].text!
+            self.initreplyData(text)
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    //MARK:一般通知回复请求
+    public func initreplyData(_ reply : String) -> Void {
+        VM.downArticle(id: articleId, replay: reply, persons: "").subscribe(onNext: { (model) in
+            if model.status! == 200 {
+                self.SuccessTost(Title: "", Body: "提交成功")
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                self.WaringTost(Title: "", Body: model.msg!)
+            }
+        }, onError: { (error) in
+            print(error.localizedDescription)
+            self.ErrorTost()
+        }).disposed(by: disposeBag)
+    }
+    //MARK:会议通知回复
+    public func initreplyVC() -> Void {
+        
+    }
     public func Forwarding() -> Void {
         ForwardingBtn = CreateUI.Button(title: "转            发", frame: CGRect(x: 0, y: 0, width: SCREEN_WIDTH/2, height: 40), backgroundColor: UIColor.red, textColor: UIColor.white, font: 17)
+        ForwardingBtn?.rx.tap.asObservable().subscribe(onNext: { _ in
+            let vc = ForwardingViewController()
+            vc.status = "通知"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }).disposed(by: disposeBag)
         footView.addSubview(ForwardingBtn!)
     }
-    
-    public  func Revert() -> Void {
+    public func Revert() -> Void {
         RevertBtn = CreateUI.Button(title: "回            复", frame: CGRect(x: SCREEN_WIDTH/2, y: 0, width: SCREEN_WIDTH/2, height: 40), backgroundColor: UIColor.rgb(76, 171, 253, 1.0), textColor: UIColor.white, font: 17)
+        RevertBtn?.rx.tap.asObservable().subscribe(onNext: { _ in
+            self.status == "ybtz" ? self.initreplyAlert() : self.initreplyVC()
+        }).disposed(by: disposeBag)
         footView.addSubview(RevertBtn!)
     }
-    
-    func ForwardingAndRevert() -> Void {
+    //MARK:底视图按钮判断
+    public func ForwardingAndRevert() -> Void {
         if ( (Zrole == "ROLE_DEPT_SECRET") || (Zrole == "ROLE_DEPT_INFO")) {
             if model?.data?.status! == "已回复" {
                 ForwardingBtn?.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 40)
@@ -67,18 +110,16 @@ extension InformTheDetailsViewController {
             })
             return
         }
-        if ((Zrole == "ROLE_OFFICE_SECRET") || (Zrole == "ROLE_DUTY_SECRET")) {
-            
-        } else {
+        if (!(Zrole == "ROLE_OFFICE_SECRET") || (Zrole == "ROLE_DUTY_SECRET")) {
             ForwardingBtn?.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
             RevertBtn?.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 40)
         }
     }
-    
     public func createUI() -> Void {
         InformTheDetailsTableView.register(UINib.init(nibName: "InformTheDetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "InformTheDetailsCell")
         InformTheDetailsTableView.separatorStyle = UITableViewCellSeparatorStyle(rawValue: 0)!
     }
+    //MARK:通知详情请求
     public func initData() -> Void {
         VM.getArticleView(articleId: articleId).subscribe(onNext: { (Model) in
             self.model = Model
@@ -102,6 +143,7 @@ extension InformTheDetailsViewController {
         }).disposed(by:disposeBag)
     }
 }
+//MARK:表格代理
 extension InformTheDetailsViewController:UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
@@ -151,12 +193,13 @@ extension InformTheDetailsViewController:UITableViewDelegate,UITableViewDataSour
         }
     }
 }
+//MARK:web代理
 extension InformTheDetailsViewController: UIWebViewDelegate {
     func webViewDidFinishLoad(_ webView: UIWebView) {
-        Height = webView.sizeThatFits(CGSize.zero).height
-        if idx <= 2 {
-            InformTheDetailsTableView.reloadData()
+        self.Height = webView.sizeThatFits(CGSize.zero).height
+        if self.idx <= 2 {
+            self.InformTheDetailsTableView.reloadData()
         }
-        idx += 1
+        self.idx += 1
     }
 }
