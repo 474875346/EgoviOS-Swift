@@ -24,6 +24,8 @@ let HttpTool = MoyaProvider<HTTPTool>()
 enum HTTPTool {
     //登录
     case LogIn(Name:String,Psw:String)
+    //退出
+    case LoginOut()
     //通知
     case getArticleDetailIndex(page:Int,type:String)
     //通知详情
@@ -59,6 +61,8 @@ extension HTTPTool : TargetType {
             return "/api/article/viewReply"
         case .viewDown:
             return "/api/article/viewDown"
+        case .LoginOut:
+            return "/loginOut"
         }
     }
     public var method: Moya.Method {
@@ -79,6 +83,8 @@ extension HTTPTool : TargetType {
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"id":id])
         case .viewDown(let id):
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"id":id])
+        case .LoginOut:
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!])
         }
     }
     

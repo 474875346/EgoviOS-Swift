@@ -32,6 +32,8 @@ class LogInViewController: BaseViewController {
                 UserDefaultSave(Key: Zduty, Value: model.data?.duty)
                 UserDefaultSave(Key: ZrealName, Value: model.data?.realName)
                 self.createTabbar()
+                self.nametextField.text = nil
+                self.pswtextField.text = nil
             } else {
                 self.WaringTost(Title: "", Body: model.msg!)
             }
@@ -51,7 +53,7 @@ extension LogInViewController {
         tabbar.selectedIndex = 1
         let nav = UINavigationController(rootViewController: tabbar)
         nav.navigationBar.isHidden = true
-        _ = [self.present(nav, animated: true, completion: nil)]
+        _ = [self.present(nav, animated: false, completion: nil)]
     }
     func createTabBarItems() -> Array<UIViewController> {
         let classArray = [MessageViewController(), WorktableViewController(),

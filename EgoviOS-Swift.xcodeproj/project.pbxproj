@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89050B161FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89050B141FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.swift */; };
+		89050B171FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89050B151FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.xib */; };
 		890CFFE11FF3436F008031EF /* ForwardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890CFFDF1FF3436F008031EF /* ForwardingViewController.swift */; };
 		890CFFE21FF3436F008031EF /* ForwardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890CFFE01FF3436F008031EF /* ForwardingViewController.xib */; };
 		890CFFE91FF36C8B008031EF /* ForwardingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890CFFE71FF36C8B008031EF /* ForwardingTableViewCell.swift */; };
@@ -33,6 +35,10 @@
 		8988579A1FE8C1A300160D3F /* InformTheDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898857991FE8C1A300160D3F /* InformTheDetailsViewModel.swift */; };
 		8988579D1FE8C1C000160D3F /* InformTheDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988579C1FE8C1C000160D3F /* InformTheDetailsModel.swift */; };
 		898857A21FE9063500160D3F /* AttachmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898857A11FE9063500160D3F /* AttachmentViewController.swift */; };
+		8988B14A1FFC6EB00009C1A9 /* WorktableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988B1481FFC6EB00009C1A9 /* WorktableCollectionViewCell.swift */; };
+		8988B14B1FFC6EB00009C1A9 /* WorktableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8988B1491FFC6EB00009C1A9 /* WorktableCollectionViewCell.xib */; };
+		8988B14D1FFCA6600009C1A9 /* WorktableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988B14C1FFCA6600009C1A9 /* WorktableViewModel.swift */; };
+		8988B1521FFCA7E30009C1A9 /* WorktableViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988B1511FFCA7E30009C1A9 /* WorktableViewViewModel.swift */; };
 		899C39851FE7A83500AC6653 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899C39831FE7A83500AC6653 /* MessageTableViewCell.swift */; };
 		899C39861FE7A83500AC6653 /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 899C39841FE7A83500AC6653 /* MessageTableViewCell.xib */; };
 		89CF568A1FE39D5C00C5F60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56891FE39D5C00C5F60D /* AppDelegate.swift */; };
@@ -60,6 +66,7 @@
 		89CF56E31FE3A9CA00C5F60D /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56E21FE3A9CA00C5F60D /* MessageViewModel.swift */; };
 		89CF56E51FE3B13900C5F60D /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56E41FE3B13900C5F60D /* BaseModel.swift */; };
 		89CF56E71FE3B71D00C5F60D /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CF56E61FE3B71D00C5F60D /* MessageModel.swift */; };
+		89D3BE411FFDC52900830B90 /* JMDropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D3BE401FFDC52900830B90 /* JMDropMenu.m */; };
 		AD22CB902036130FA4421763 /* Pods_EgoviOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E978744145A220BA2EB7F8D1 /* Pods_EgoviOS_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +90,8 @@
 /* Begin PBXFileReference section */
 		2A0A4F6D52BB7C7150CADAF3 /* Pods-EgoviOS-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgoviOS-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		32020B70750EA28CE5838BB6 /* Pods-EgoviOS-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EgoviOS-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-EgoviOS-Swift/Pods-EgoviOS-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		89050B141FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorktableHeadCollectionViewCell.swift; sourceTree = "<group>"; };
+		89050B151FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorktableHeadCollectionViewCell.xib; sourceTree = "<group>"; };
 		890CFFDF1FF3436F008031EF /* ForwardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardingViewController.swift; sourceTree = "<group>"; };
 		890CFFE01FF3436F008031EF /* ForwardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForwardingViewController.xib; sourceTree = "<group>"; };
 		890CFFE71FF36C8B008031EF /* ForwardingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardingTableViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +118,10 @@
 		898857991FE8C1A300160D3F /* InformTheDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformTheDetailsViewModel.swift; sourceTree = "<group>"; };
 		8988579C1FE8C1C000160D3F /* InformTheDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformTheDetailsModel.swift; sourceTree = "<group>"; };
 		898857A11FE9063500160D3F /* AttachmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentViewController.swift; sourceTree = "<group>"; };
+		8988B1481FFC6EB00009C1A9 /* WorktableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorktableCollectionViewCell.swift; sourceTree = "<group>"; };
+		8988B1491FFC6EB00009C1A9 /* WorktableCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorktableCollectionViewCell.xib; sourceTree = "<group>"; };
+		8988B14C1FFCA6600009C1A9 /* WorktableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorktableViewModel.swift; sourceTree = "<group>"; };
+		8988B1511FFCA7E30009C1A9 /* WorktableViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorktableViewViewModel.swift; sourceTree = "<group>"; };
 		899C39831FE7A83500AC6653 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		899C39841FE7A83500AC6653 /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		89CF56861FE39D5C00C5F60D /* EgoviOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EgoviOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +155,9 @@
 		89CF56E21FE3A9CA00C5F60D /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		89CF56E41FE3B13900C5F60D /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		89CF56E61FE3B71D00C5F60D /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		89D3BE381FFDC50F00830B90 /* EgoviOS-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EgoviOS-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		89D3BE3F1FFDC52900830B90 /* JMDropMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDropMenu.h; sourceTree = "<group>"; };
+		89D3BE401FFDC52900830B90 /* JMDropMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMDropMenu.m; sourceTree = "<group>"; };
 		E978744145A220BA2EB7F8D1 /* Pods_EgoviOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EgoviOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -359,6 +375,42 @@
 			path = "附件查看";
 			sourceTree = "<group>";
 		};
+		8988B1461FFC6E8D0009C1A9 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56D31FE3A1F000C5F60D /* WorktableViewController.swift */,
+				89CF56D41FE3A1F000C5F60D /* WorktableViewController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		8988B1471FFC6E930009C1A9 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				8988B1481FFC6EB00009C1A9 /* WorktableCollectionViewCell.swift */,
+				8988B1491FFC6EB00009C1A9 /* WorktableCollectionViewCell.xib */,
+				89050B141FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.swift */,
+				89050B151FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		8988B14F1FFCA6700009C1A9 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				8988B14C1FFCA6600009C1A9 /* WorktableViewModel.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		8988B1501FFCA7C60009C1A9 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				8988B1511FFCA7E30009C1A9 /* WorktableViewViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
 		89CF567D1FE39D5C00C5F60D = {
 			isa = PBXGroup;
 			children = (
@@ -454,10 +506,12 @@
 		89CF56BE1FE39E3700C5F60D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				89D3BE3E1FFDC52900830B90 /* JMDropMenu */,
 				89CF56BF1FE39E3700C5F60D /* File.swift */,
 				89CF56C01FE39E3700C5F60D /* HTTPRequestTool.swift */,
 				89CF56C11FE39E3700C5F60D /* SwiftMessageManager.swift */,
 				89CF56C21FE39E3700C5F60D /* UIView+ ViewChainable.swift */,
+				89D3BE381FFDC50F00830B90 /* EgoviOS-Swift-Bridging-Header.h */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -488,8 +542,10 @@
 		89CF56DC1FE3A22C00C5F60D /* 工作台 */ = {
 			isa = PBXGroup;
 			children = (
-				89CF56D31FE3A1F000C5F60D /* WorktableViewController.swift */,
-				89CF56D41FE3A1F000C5F60D /* WorktableViewController.xib */,
+				8988B1501FFCA7C60009C1A9 /* VM */,
+				8988B14F1FFCA6700009C1A9 /* M */,
+				8988B1471FFC6E930009C1A9 /* V */,
+				8988B1461FFC6E8D0009C1A9 /* C */,
 			);
 			path = "工作台";
 			sourceTree = "<group>";
@@ -539,6 +595,15 @@
 				89CF56E61FE3B71D00C5F60D /* MessageModel.swift */,
 			);
 			path = M;
+			sourceTree = "<group>";
+		};
+		89D3BE3E1FFDC52900830B90 /* JMDropMenu */ = {
+			isa = PBXGroup;
+			children = (
+				89D3BE3F1FFDC52900830B90 /* JMDropMenu.h */,
+				89D3BE401FFDC52900830B90 /* JMDropMenu.m */,
+			);
+			path = JMDropMenu;
 			sourceTree = "<group>";
 		};
 		89E20BD11FE76D1900E6C300 /* V */ = {
@@ -638,6 +703,7 @@
 				TargetAttributes = {
 					89CF56851FE39D5C00C5F60D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					89CF56991FE39D5C00C5F60D = {
@@ -677,6 +743,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8988B14B1FFC6EB00009C1A9 /* WorktableCollectionViewCell.xib in Resources */,
 				89CF56CE1FE39E5B00C5F60D /* LogInViewController.xib in Resources */,
 				890CFFE21FF3436F008031EF /* ForwardingViewController.xib in Resources */,
 				898857901FE8BA2500160D3F /* InformTheDetailsViewController.xib in Resources */,
@@ -691,6 +758,7 @@
 				89CF56911FE39D5C00C5F60D /* Assets.xcassets in Resources */,
 				8976CE291FFB329D00A74035 /* AttendeesViewController.xib in Resources */,
 				8976CE4B1FFB7DC600A74035 /* AttendeesTableViewCell.xib in Resources */,
+				89050B171FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.xib in Resources */,
 				89CF56D61FE3A1F000C5F60D /* WorktableViewController.xib in Resources */,
 				890CFFEA1FF36C8B008031EF /* ForwardingTableViewCell.xib in Resources */,
 				89CF568F1FE39D5C00C5F60D /* Main.storyboard in Resources */,
@@ -834,20 +902,25 @@
 				89CF56C51FE39E3700C5F60D /* Model.swift in Sources */,
 				89CF56E31FE3A9CA00C5F60D /* MessageViewModel.swift in Sources */,
 				89CF56C61FE39E3700C5F60D /* File.swift in Sources */,
+				89050B161FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.swift in Sources */,
 				890CFFED1FF36D95008031EF /* ForwardingCollectionViewCell.swift in Sources */,
 				89CF568C1FE39D5C00C5F60D /* ViewController.swift in Sources */,
+				8988B14D1FFCA6600009C1A9 /* WorktableViewModel.swift in Sources */,
 				8976CE461FFB74DC00A74035 /* PeopleRespondCell.swift in Sources */,
 				8976CE361FFB582000A74035 /* PeopleRespondViewController.swift in Sources */,
 				89CF568A1FE39D5C00C5F60D /* AppDelegate.swift in Sources */,
 				8988579D1FE8C1C000160D3F /* InformTheDetailsModel.swift in Sources */,
+				8988B1521FFCA7E30009C1A9 /* WorktableViewViewModel.swift in Sources */,
 				89CF56D51FE3A1F000C5F60D /* WorktableViewController.swift in Sources */,
 				898857951FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift in Sources */,
+				89D3BE411FFDC52900830B90 /* JMDropMenu.m in Sources */,
 				894B65661FE75C3000FA17F2 /* MessageRefreshViewModel.swift in Sources */,
 				899C39851FE7A83500AC6653 /* MessageTableViewCell.swift in Sources */,
 				89CF56E51FE3B13900C5F60D /* BaseModel.swift in Sources */,
 				89CF56C91FE39E3700C5F60D /* UIView+ ViewChainable.swift in Sources */,
 				890CFFE11FF3436F008031EF /* ForwardingViewController.swift in Sources */,
 				89CF56D11FE3A1E000C5F60D /* MessageViewController.swift in Sources */,
+				8988B14A1FFC6EB00009C1A9 /* WorktableCollectionViewCell.swift in Sources */,
 				8976CE301FFB32D400A74035 /* AttendeesViewModel.swift in Sources */,
 				89CF56C41FE39E3700C5F60D /* ViewModel.swift in Sources */,
 				89CF56CD1FE39E5B00C5F60D /* LogInViewController.swift in Sources */,
@@ -1018,6 +1091,7 @@
 			baseConfigurationReference = 2A0A4F6D52BB7C7150CADAF3 /* Pods-EgoviOS-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VALQ39Y9P2;
 				INFOPLIST_FILE = "EgoviOS-Swift/Info.plist";
@@ -1025,6 +1099,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zyx.EgoviOS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EgoviOS-Swift/Tool/EgoviOS-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1035,6 +1111,7 @@
 			baseConfigurationReference = 32020B70750EA28CE5838BB6 /* Pods-EgoviOS-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VALQ39Y9P2;
 				INFOPLIST_FILE = "EgoviOS-Swift/Info.plist";
@@ -1042,6 +1119,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zyx.EgoviOS-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EgoviOS-Swift/Tool/EgoviOS-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

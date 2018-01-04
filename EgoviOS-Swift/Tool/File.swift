@@ -58,7 +58,30 @@ func ViewBorderRadius(view:UIView, Radius:CGFloat,Width:CGFloat,Color:UIColor) -
     view.layer.borderWidth=Width
     view.layer.borderColor=Color.cgColor
 }
-
+//X大小
+func X(_ view:UIView) -> CGFloat {
+    return view.frame.origin.x
+}
+//Y大小
+func Y(_ view:UIView) -> CGFloat {
+    return view.frame.origin.y
+}
+//宽大小
+func W(_ view:UIView) -> CGFloat {
+    return view.frame.size.width
+}
+//高大小
+func H(_ view:UIView) -> CGFloat {
+    return view.frame.size.height
+}
+//X+宽大小
+func XW(_ view:UIView) -> CGFloat {
+    return view.frame.origin.x+view.frame.size.width
+}
+//Y+高大小
+func YH(_ view:UIView) -> CGFloat {
+    return view.frame.origin.y+view.frame.size.height
+}
 //取数据的key
 let ZToken = "access_token"
 let ZDept = "dept"
@@ -66,6 +89,26 @@ let Zduty = "duty"
 let ZrealName = "realName"
 let Zcode = "code"
 let Zrole = "\(UserDefauTake(Key: Zcode) ?? String())"
+//获取时间
+func getTimes() -> [Any] {
+    
+    var timers: [Any] = [] //  返回的数组
+    
+    let calendar: Calendar = Calendar(identifier: .gregorian)
+    var comps: DateComponents = DateComponents()
+    comps = calendar.dateComponents([.year,.month,.day, .weekday, .hour, .minute,.second], from: Date())
+    let week = ["星期天","星期一","星期二", "星期三", "星期四","星期五", "星期六"]
+    
+    timers.append(comps.year!)  // 年
+    timers.append(comps.month!)            // 月
+    timers.append(comps.day!)                // 日
+    timers.append(comps.hour!)               // 小时
+    timers.append(comps.minute!)            // 分钟
+    timers.append(comps.second!)            // 秒
+    timers.append(week[comps.weekday! - 1])      //星期
+    
+    return timers;
+}
 
 //存数据
 func UserDefaultSave(Key:String,Value:Any?) {
