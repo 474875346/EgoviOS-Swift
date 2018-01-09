@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressGetUserByDeptIdViewController" customModule="EgoviOS_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="AddressGetUserByDeptIdSearch" destination="cDT-CC-P4P" id="WPz-6Z-lcf"/>
+                <outlet property="AddressGetUserByDeptIdTable" destination="WVC-pI-DL7" id="pRv-g4-Y6x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="请输入手机号或姓名" translatesAutoresizingMaskIntoConstraints="NO" id="cDT-CC-P4P">
+                    <rect key="frame" x="0.0" y="64" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="EKV-Yg-Jq8"/>
+                        <constraint firstAttribute="height" constant="45" id="nrc-wy-Gbr"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.9414459074" green="0.9414459074" blue="0.9414459074" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WVC-pI-DL7">
+                    <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cDT-CC-P4P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="0Lc-GR-2eD"/>
+                <constraint firstAttribute="trailing" secondItem="cDT-CC-P4P" secondAttribute="trailing" id="4cx-lg-b50"/>
+                <constraint firstAttribute="bottom" secondItem="WVC-pI-DL7" secondAttribute="bottom" id="9Ou-SQ-HT0"/>
+                <constraint firstItem="WVC-pI-DL7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D6D-Q6-mJp"/>
+                <constraint firstItem="WVC-pI-DL7" firstAttribute="top" secondItem="cDT-CC-P4P" secondAttribute="bottom" id="Ddh-NY-RT7"/>
+                <constraint firstItem="WVC-pI-DL7" firstAttribute="top" secondItem="cDT-CC-P4P" secondAttribute="bottom" id="Ftg-EB-8c5"/>
+                <constraint firstItem="cDT-CC-P4P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b8H-xc-fJC"/>
+                <constraint firstItem="WVC-pI-DL7" firstAttribute="top" secondItem="cDT-CC-P4P" secondAttribute="bottom" id="e4U-sv-rOP"/>
+                <constraint firstItem="WVC-pI-DL7" firstAttribute="top" secondItem="cDT-CC-P4P" secondAttribute="bottom" id="j3R-CE-nEX"/>
+                <constraint firstAttribute="trailing" secondItem="WVC-pI-DL7" secondAttribute="trailing" id="o33-4n-Byp"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

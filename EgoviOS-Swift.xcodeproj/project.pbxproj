@@ -16,6 +16,10 @@
 		890CFFED1FF36D95008031EF /* ForwardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890CFFEB1FF36D95008031EF /* ForwardingCollectionViewCell.swift */; };
 		890CFFEE1FF36D95008031EF /* ForwardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890CFFEC1FF36D95008031EF /* ForwardingCollectionViewCell.xib */; };
 		894B65661FE75C3000FA17F2 /* MessageRefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */; };
+		896231FE20030154008FEB05 /* AddressBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896231FD20030154008FEB05 /* AddressBookViewModel.swift */; };
+		8962320120030165008FEB05 /* AddressBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896231FF20030165008FEB05 /* AddressBookTableViewCell.swift */; };
+		8962320220030165008FEB05 /* AddressBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8962320020030165008FEB05 /* AddressBookTableViewCell.xib */; };
+		896232042003017E008FEB05 /* AddressBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896232032003017E008FEB05 /* AddressBookModel.swift */; };
 		8976CE281FFB329D00A74035 /* AttendeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976CE261FFB329D00A74035 /* AttendeesViewController.swift */; };
 		8976CE291FFB329D00A74035 /* AttendeesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8976CE271FFB329D00A74035 /* AttendeesViewController.xib */; };
 		8976CE301FFB32D400A74035 /* AttendeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976CE2F1FFB32D400A74035 /* AttendeesViewModel.swift */; };
@@ -28,6 +32,15 @@
 		8976CE471FFB74DC00A74035 /* PeopleRespondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8976CE451FFB74DC00A74035 /* PeopleRespondCell.xib */; };
 		8976CE4A1FFB7DC600A74035 /* AttendeesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976CE481FFB7DC600A74035 /* AttendeesTableViewCell.swift */; };
 		8976CE4B1FFB7DC600A74035 /* AttendeesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8976CE491FFB7DC600A74035 /* AttendeesTableViewCell.xib */; };
+		897DFB8F200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFB8D200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.swift */; };
+		897DFB90200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897DFB8E200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.xib */; };
+		897DFB92200457E2007D7BA0 /* AddressGetAllUserByDeptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFB91200457E2007D7BA0 /* AddressGetAllUserByDeptModel.swift */; };
+		897DFB9520045E8E007D7BA0 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFB9320045E8E007D7BA0 /* ContactDetailsViewController.swift */; };
+		897DFB9620045E8E007D7BA0 /* ContactDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897DFB9420045E8E007D7BA0 /* ContactDetailsViewController.xib */; };
+		897DFB98200468D7007D7BA0 /* ContactDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFB97200468D7007D7BA0 /* ContactDetailsModel.swift */; };
+		897DFB9B20046D18007D7BA0 /* AddressGetUserByDeptIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFB9920046D18007D7BA0 /* AddressGetUserByDeptIdViewController.swift */; };
+		897DFB9C20046D18007D7BA0 /* AddressGetUserByDeptIdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897DFB9A20046D18007D7BA0 /* AddressGetUserByDeptIdViewController.xib */; };
+		897DFB9E20046D87007D7BA0 /* AddressGetUserByDeptIdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897DFB9D20046D87007D7BA0 /* AddressGetUserByDeptIdModel.swift */; };
 		8988578F1FE8BA2500160D3F /* InformTheDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8988578D1FE8BA2500160D3F /* InformTheDetailsViewController.swift */; };
 		898857901FE8BA2500160D3F /* InformTheDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8988578E1FE8BA2500160D3F /* InformTheDetailsViewController.xib */; };
 		898857951FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898857931FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift */; };
@@ -99,6 +112,10 @@
 		890CFFEB1FF36D95008031EF /* ForwardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		890CFFEC1FF36D95008031EF /* ForwardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForwardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRefreshViewModel.swift; sourceTree = "<group>"; };
+		896231FD20030154008FEB05 /* AddressBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookViewModel.swift; sourceTree = "<group>"; };
+		896231FF20030165008FEB05 /* AddressBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookTableViewCell.swift; sourceTree = "<group>"; };
+		8962320020030165008FEB05 /* AddressBookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressBookTableViewCell.xib; sourceTree = "<group>"; };
+		896232032003017E008FEB05 /* AddressBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookModel.swift; sourceTree = "<group>"; };
 		8976CE261FFB329D00A74035 /* AttendeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendeesViewController.swift; sourceTree = "<group>"; };
 		8976CE271FFB329D00A74035 /* AttendeesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendeesViewController.xib; sourceTree = "<group>"; };
 		8976CE2F1FFB32D400A74035 /* AttendeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendeesViewModel.swift; sourceTree = "<group>"; };
@@ -111,6 +128,15 @@
 		8976CE451FFB74DC00A74035 /* PeopleRespondCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleRespondCell.xib; sourceTree = "<group>"; };
 		8976CE481FFB7DC600A74035 /* AttendeesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendeesTableViewCell.swift; sourceTree = "<group>"; };
 		8976CE491FFB7DC600A74035 /* AttendeesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendeesTableViewCell.xib; sourceTree = "<group>"; };
+		897DFB8D200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressGetAllUserByDeptViewController.swift; sourceTree = "<group>"; };
+		897DFB8E200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressGetAllUserByDeptViewController.xib; sourceTree = "<group>"; };
+		897DFB91200457E2007D7BA0 /* AddressGetAllUserByDeptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressGetAllUserByDeptModel.swift; sourceTree = "<group>"; };
+		897DFB9320045E8E007D7BA0 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		897DFB9420045E8E007D7BA0 /* ContactDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailsViewController.xib; sourceTree = "<group>"; };
+		897DFB97200468D7007D7BA0 /* ContactDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsModel.swift; sourceTree = "<group>"; };
+		897DFB9920046D18007D7BA0 /* AddressGetUserByDeptIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressGetUserByDeptIdViewController.swift; sourceTree = "<group>"; };
+		897DFB9A20046D18007D7BA0 /* AddressGetUserByDeptIdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressGetUserByDeptIdViewController.xib; sourceTree = "<group>"; };
+		897DFB9D20046D87007D7BA0 /* AddressGetUserByDeptIdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressGetUserByDeptIdModel.swift; sourceTree = "<group>"; };
 		8988578D1FE8BA2500160D3F /* InformTheDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformTheDetailsViewController.swift; sourceTree = "<group>"; };
 		8988578E1FE8BA2500160D3F /* InformTheDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformTheDetailsViewController.xib; sourceTree = "<group>"; };
 		898857931FE8BF1300160D3F /* InformTheDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformTheDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -228,6 +254,49 @@
 		890CFFE61FF34CCD008031EF /* M */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		896231EE20030053008FEB05 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				89CF56D71FE3A1FD00C5F60D /* AddressBookViewController.swift */,
+				89CF56D81FE3A1FD00C5F60D /* AddressBookViewController.xib */,
+				897DFB8D200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.swift */,
+				897DFB8E200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.xib */,
+				897DFB9920046D18007D7BA0 /* AddressGetUserByDeptIdViewController.swift */,
+				897DFB9A20046D18007D7BA0 /* AddressGetUserByDeptIdViewController.xib */,
+				897DFB9320045E8E007D7BA0 /* ContactDetailsViewController.swift */,
+				897DFB9420045E8E007D7BA0 /* ContactDetailsViewController.xib */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		896231EF20030068008FEB05 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				896231FD20030154008FEB05 /* AddressBookViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		896231F020030077008FEB05 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				896231FF20030165008FEB05 /* AddressBookTableViewCell.swift */,
+				8962320020030165008FEB05 /* AddressBookTableViewCell.xib */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		896231F12003007D008FEB05 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				896232032003017E008FEB05 /* AddressBookModel.swift */,
+				897DFB91200457E2007D7BA0 /* AddressGetAllUserByDeptModel.swift */,
+				897DFB9D20046D87007D7BA0 /* AddressGetUserByDeptIdModel.swift */,
+				897DFB97200468D7007D7BA0 /* ContactDetailsModel.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -553,8 +622,10 @@
 		89CF56DD1FE3A23C00C5F60D /* 通讯录 */ = {
 			isa = PBXGroup;
 			children = (
-				89CF56D71FE3A1FD00C5F60D /* AddressBookViewController.swift */,
-				89CF56D81FE3A1FD00C5F60D /* AddressBookViewController.xib */,
+				896231F12003007D008FEB05 /* M */,
+				896231F020030077008FEB05 /* V */,
+				896231EF20030068008FEB05 /* VM */,
+				896231EE20030053008FEB05 /* C */,
 			);
 			path = "通讯录";
 			sourceTree = "<group>";
@@ -745,9 +816,12 @@
 			files = (
 				8988B14B1FFC6EB00009C1A9 /* WorktableCollectionViewCell.xib in Resources */,
 				89CF56CE1FE39E5B00C5F60D /* LogInViewController.xib in Resources */,
+				897DFB9620045E8E007D7BA0 /* ContactDetailsViewController.xib in Resources */,
 				890CFFE21FF3436F008031EF /* ForwardingViewController.xib in Resources */,
 				898857901FE8BA2500160D3F /* InformTheDetailsViewController.xib in Resources */,
+				897DFB90200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.xib in Resources */,
 				899C39861FE7A83500AC6653 /* MessageTableViewCell.xib in Resources */,
+				8962320220030165008FEB05 /* AddressBookTableViewCell.xib in Resources */,
 				89CF56DA1FE3A1FD00C5F60D /* AddressBookViewController.xib in Resources */,
 				89CF56D21FE3A1E000C5F60D /* MessageViewController.xib in Resources */,
 				8976CE471FFB74DC00A74035 /* PeopleRespondCell.xib in Resources */,
@@ -758,6 +832,7 @@
 				89CF56911FE39D5C00C5F60D /* Assets.xcassets in Resources */,
 				8976CE291FFB329D00A74035 /* AttendeesViewController.xib in Resources */,
 				8976CE4B1FFB7DC600A74035 /* AttendeesTableViewCell.xib in Resources */,
+				897DFB9C20046D18007D7BA0 /* AddressGetUserByDeptIdViewController.xib in Resources */,
 				89050B171FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.xib in Resources */,
 				89CF56D61FE3A1F000C5F60D /* WorktableViewController.xib in Resources */,
 				890CFFEA1FF36C8B008031EF /* ForwardingTableViewCell.xib in Resources */,
@@ -804,6 +879,7 @@
 				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
@@ -831,6 +907,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
@@ -894,9 +971,13 @@
 				8976CE281FFB329D00A74035 /* AttendeesViewController.swift in Sources */,
 				89CF56C71FE39E3700C5F60D /* HTTPRequestTool.swift in Sources */,
 				8976CE321FFB332800A74035 /* AttendeesModel.swift in Sources */,
+				897DFB92200457E2007D7BA0 /* AddressGetAllUserByDeptModel.swift in Sources */,
+				897DFB98200468D7007D7BA0 /* ContactDetailsModel.swift in Sources */,
 				89CF56C81FE39E3700C5F60D /* SwiftMessageManager.swift in Sources */,
 				890CFFE91FF36C8B008031EF /* ForwardingTableViewCell.swift in Sources */,
+				896231FE20030154008FEB05 /* AddressBookViewModel.swift in Sources */,
 				89CF56E71FE3B71D00C5F60D /* MessageModel.swift in Sources */,
+				897DFB9B20046D18007D7BA0 /* AddressGetUserByDeptIdViewController.swift in Sources */,
 				8976CE4A1FFB7DC600A74035 /* AttendeesTableViewCell.swift in Sources */,
 				898857A21FE9063500160D3F /* AttachmentViewController.swift in Sources */,
 				89CF56C51FE39E3700C5F60D /* Model.swift in Sources */,
@@ -904,10 +985,13 @@
 				89CF56C61FE39E3700C5F60D /* File.swift in Sources */,
 				89050B161FFCBF5D00033BF9 /* WorktableHeadCollectionViewCell.swift in Sources */,
 				890CFFED1FF36D95008031EF /* ForwardingCollectionViewCell.swift in Sources */,
+				897DFB9520045E8E007D7BA0 /* ContactDetailsViewController.swift in Sources */,
+				8962320120030165008FEB05 /* AddressBookTableViewCell.swift in Sources */,
 				89CF568C1FE39D5C00C5F60D /* ViewController.swift in Sources */,
 				8988B14D1FFCA6600009C1A9 /* WorktableViewModel.swift in Sources */,
 				8976CE461FFB74DC00A74035 /* PeopleRespondCell.swift in Sources */,
 				8976CE361FFB582000A74035 /* PeopleRespondViewController.swift in Sources */,
+				897DFB8F200456C1007D7BA0 /* AddressGetAllUserByDeptViewController.swift in Sources */,
 				89CF568A1FE39D5C00C5F60D /* AppDelegate.swift in Sources */,
 				8988579D1FE8C1C000160D3F /* InformTheDetailsModel.swift in Sources */,
 				8988B1521FFCA7E30009C1A9 /* WorktableViewViewModel.swift in Sources */,
@@ -916,7 +1000,9 @@
 				89D3BE411FFDC52900830B90 /* JMDropMenu.m in Sources */,
 				894B65661FE75C3000FA17F2 /* MessageRefreshViewModel.swift in Sources */,
 				899C39851FE7A83500AC6653 /* MessageTableViewCell.swift in Sources */,
+				897DFB9E20046D87007D7BA0 /* AddressGetUserByDeptIdModel.swift in Sources */,
 				89CF56E51FE3B13900C5F60D /* BaseModel.swift in Sources */,
+				896232042003017E008FEB05 /* AddressBookModel.swift in Sources */,
 				89CF56C91FE39E3700C5F60D /* UIView+ ViewChainable.swift in Sources */,
 				890CFFE11FF3436F008031EF /* ForwardingViewController.swift in Sources */,
 				89CF56D11FE3A1E000C5F60D /* MessageViewController.swift in Sources */,

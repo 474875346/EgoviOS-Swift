@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressGetAllUserByDeptViewController" customModule="EgoviOS_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="GetAllUserByDeptSearch" destination="7G3-Ul-dr1" id="ijT-Rr-tJY"/>
+                <outlet property="GetAllUserByDeptTable" destination="thX-dl-buq" id="Z1A-gj-hVE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="请输入手机号或姓名" translatesAutoresizingMaskIntoConstraints="NO" id="7G3-Ul-dr1">
+                    <rect key="frame" x="0.0" y="64" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="WAC-HE-vhf"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="kH4-a8-ooM"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.9414459074" green="0.9414459074" blue="0.9414459074" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="thX-dl-buq">
+                    <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="thX-dl-buq" secondAttribute="trailing" id="9ER-fE-Gf3"/>
+                <constraint firstItem="thX-dl-buq" firstAttribute="top" secondItem="7G3-Ul-dr1" secondAttribute="bottom" id="DtI-qs-MbO"/>
+                <constraint firstItem="thX-dl-buq" firstAttribute="top" secondItem="7G3-Ul-dr1" secondAttribute="bottom" id="XzC-N6-kMQ"/>
+                <constraint firstItem="7G3-Ul-dr1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="bv8-JU-zEE"/>
+                <constraint firstAttribute="bottom" secondItem="thX-dl-buq" secondAttribute="bottom" id="e02-RN-zCJ"/>
+                <constraint firstItem="7G3-Ul-dr1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fwE-YY-93w"/>
+                <constraint firstItem="thX-dl-buq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="luN-gH-3rN"/>
+                <constraint firstAttribute="trailing" secondItem="7G3-Ul-dr1" secondAttribute="trailing" id="mV0-Aa-r2D"/>
+                <constraint firstItem="thX-dl-buq" firstAttribute="top" secondItem="7G3-Ul-dr1" secondAttribute="bottom" id="uEg-9t-Hjb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

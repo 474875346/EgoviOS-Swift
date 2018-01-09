@@ -24,6 +24,7 @@ pod 'SwiftyJSON'#Json解析(Swift)
 pod 'CryptoSwift'#加密库(Swift)
 pod 'FSCalendar'#日历(Swift)
 pod 'Then'#协议库(Swift)
+pod 'ReactiveSwift'#RAC(swift)
 end
 
 

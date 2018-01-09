@@ -7,17 +7,18 @@
 //
 
 import UIKit
-
+import NVActivityIndicatorView
+let ActivityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: SCREEN_WIDTH/2-25, y: SCREEN_HEIGHT/2-64, width: 50, height: 50), type:NVActivityIndicatorType(rawValue: 1), color: UIColor.red, padding: 1.0)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let nav = UINavigationController(rootViewController: LogInViewController())
         nav.navigationBar.isHidden = true
         self.window?.rootViewController = nav
+        self.window?.addSubview(ActivityIndicatorView)
         return true
     }
 

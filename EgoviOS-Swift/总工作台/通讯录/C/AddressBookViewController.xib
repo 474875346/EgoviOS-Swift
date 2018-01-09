@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressBookViewController" customModule="EgoviOS_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="AddressBookTable" destination="sw2-PG-66H" id="VwK-AB-Juv"/>
+                <outlet property="search" destination="EZQ-iS-Syl" id="RJ6-9M-4Xq"/>
+                <outlet property="searchDisplayController" destination="EBc-i8-lbv" id="dsJ-Tq-kiQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="请输入手机号或姓名" translatesAutoresizingMaskIntoConstraints="NO" id="EZQ-iS-Syl">
+                    <rect key="frame" x="0.0" y="64" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="X0y-Vu-RSL"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.94144590736040612" green="0.94144590736040612" blue="0.94144590736040612" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sw2-PG-66H">
+                    <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sw2-PG-66H" secondAttribute="trailing" id="2rO-Z2-A33"/>
+                <constraint firstAttribute="trailing" secondItem="EZQ-iS-Syl" secondAttribute="trailing" id="8YA-qK-mn0"/>
+                <constraint firstAttribute="bottom" secondItem="sw2-PG-66H" secondAttribute="bottom" id="Aqn-1I-Y5a"/>
+                <constraint firstItem="EZQ-iS-Syl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ZGI-lf-suA"/>
+                <constraint firstItem="sw2-PG-66H" firstAttribute="top" secondItem="EZQ-iS-Syl" secondAttribute="bottom" id="ero-LO-MdW"/>
+                <constraint firstItem="EZQ-iS-Syl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vQ7-OC-v7Z"/>
+                <constraint firstItem="sw2-PG-66H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yAn-ty-NIW"/>
+            </constraints>
+        </view>
+        <searchDisplayController id="EBc-i8-lbv">
+            <connections>
+                <outlet property="delegate" destination="-1" id="uvv-vo-K4s"/>
+                <outlet property="searchContentsController" destination="-1" id="1JU-Av-vhU"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="KqI-vm-N4W"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="21L-OT-w9j"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

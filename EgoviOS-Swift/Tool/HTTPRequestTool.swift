@@ -36,6 +36,14 @@ enum HTTPTool {
     case viewReply(id:NSInteger)
     //通知查看发送人员
     case viewDown(id:NSInteger)
+    //通讯录
+    case getRootDept()
+    //通讯录子类
+    case getAllUserByDept(id:NSInteger)
+    //通讯录子类人员
+    case getUserByDeptId(id:NSInteger)
+    //通讯录详情
+    case getUser(id:NSInteger)
 }
 extension HTTPTool : TargetType {
     var headers: [String : String]? {
@@ -63,6 +71,14 @@ extension HTTPTool : TargetType {
             return "/api/article/viewDown"
         case .LoginOut:
             return "/loginOut"
+        case .getRootDept:
+            return "/api/address/getRootDept"
+        case .getAllUserByDept:
+            return "/api/address/getAllUserByDept"
+        case .getUser:
+            return "/api/address/getUser"
+        case .getUserByDeptId:
+            return "/api/address/getUserByDeptId"
         }
     }
     public var method: Moya.Method {
@@ -71,7 +87,6 @@ extension HTTPTool : TargetType {
     public var task: Task {
         switch self {
         case .LogIn(let name,let psw):
-            print(["client":deviceUUID!,"username":name,"password":psw,"os":"ios","brand":"apple","registrationId":""])
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"username":name,"password":psw,"os":"ios","brand":"apple","registrationId":""])
         case .getArticleDetailIndex(let page, let type):
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"pageNumber":page,"type":type])
@@ -85,6 +100,14 @@ extension HTTPTool : TargetType {
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!,"id":id])
         case .LoginOut:
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["app_token":UserDefauTake(Key: ZToken)!,"client":deviceUUID!])
+        case .getRootDept:
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"app_token":UserDefauTake(Key: ZToken)!])
+        case .getAllUserByDept(let id):
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"app_token":UserDefauTake(Key: ZToken)!,"deptId":id])
+        case .getUser(let id):
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"app_token":UserDefauTake(Key: ZToken)!,"userId":id])
+        case .getUserByDeptId(let id):
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"app_token":UserDefauTake(Key: ZToken)!,"deptId":id])
         }
     }
     

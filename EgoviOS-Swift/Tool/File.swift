@@ -6,6 +6,15 @@ let SCREEN_WIDTH = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let deviceUUID = UIDevice.current.identifierForVendor?.uuidString
 extension UIColor {
+    class var randomColor: UIColor {
+        get {
+            let red = CGFloat(arc4random()%120+50)/255.0
+            let green = CGFloat(arc4random()%120+50)/255.0
+            let blue = CGFloat(arc4random()%120+50)/255.0
+            return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+        }
+    }
+    
     static func rgb(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat ,_ a: CGFloat) -> UIColor {
         return UIColor.init(red: r / 255, green: g / 255, blue: b / 255,alpha: a)
     }
