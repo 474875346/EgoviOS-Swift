@@ -23,4 +23,11 @@ class WorktableViewViewModel: NSObject {
         .mapObject(Model.self)
         .asObservable()
     }
+    func HomeDolist() -> Observable<HomeDolistModel> {
+        return HttpTool
+        .rx
+        .request(.HomeDoList())
+        .mapObject(HomeDolistModel.self)
+        .asObservable()
+    }
 }

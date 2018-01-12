@@ -44,6 +44,8 @@ enum HTTPTool {
     case getUserByDeptId(id:NSInteger)
     //通讯录详情
     case getUser(id:NSInteger)
+    //公文个数
+    case HomeDoList()
 }
 extension HTTPTool : TargetType {
     var headers: [String : String]? {
@@ -79,6 +81,8 @@ extension HTTPTool : TargetType {
             return "/api/address/getUser"
         case .getUserByDeptId:
             return "/api/address/getUserByDeptId"
+        case .HomeDoList:
+            return "/api/bumfTask/HomeDoList"
         }
     }
     public var method: Moya.Method {
@@ -108,6 +112,8 @@ extension HTTPTool : TargetType {
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"app_token":UserDefauTake(Key: ZToken)!,"userId":id])
         case .getUserByDeptId(let id):
             return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"app_token":UserDefauTake(Key: ZToken)!,"deptId":id])
+        case .HomeDoList:
+            return .requestCompositeParameters(bodyParameters: ["":""], bodyEncoding: JSONEncoding.default, urlParameters: ["client":deviceUUID!,"app_token":UserDefauTake(Key: ZToken)!])
         }
     }
     

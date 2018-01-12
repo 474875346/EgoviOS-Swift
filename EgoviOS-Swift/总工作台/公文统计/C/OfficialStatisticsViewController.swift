@@ -1,14 +1,14 @@
 //
-//  WorktableViewController.swift
+//  OfficialStatisticsViewController.swift
 //  EgoviOS-Swift
 //
-//  Created by 新龙科技 on 2017/12/15.
-//  Copyright © 2017年 新龙科技. All rights reserved.
+//  Created by 新龙科技 on 2018/1/12.
+//  Copyright © 2018年 新龙科技. All rights reserved.
 //
 
 import UIKit
 
-class WorktableViewController: BaseViewController {
+class OfficialStatisticsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

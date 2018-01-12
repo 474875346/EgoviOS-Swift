@@ -18,7 +18,10 @@ class WorktableViewController: BaseViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var duty: UILabel!
     @IBOutlet weak var time: UILabel!
-    
+    @IBOutlet weak var Welcome_return: UILabel!
+    @IBOutlet weak var Other: UILabel!
+    @IBOutlet weak var Director: UILabel!
+    @IBOutlet weak var Mayor: UILabel!
     let VM = WorktableViewViewModel()
     let disposeBag = DisposeBag()
     var modelArray : Array<[LXFModel]> = []
@@ -33,10 +36,16 @@ class WorktableViewController: BaseViewController {
         super.viewDidLoad()
         initMainpage()
         createUI()
+        HomeDolistData()
     }
     @IBAction func SetUp(_ sender: UIButton) {
         JMDropMenu.showFrame(CGRect(x:X(sender)-100, y: YH(sender), width: 130, height: 90), arrowOffset: 110.0, titleArr: ["修改密码","退出登录"], imageArr: ["修改密码","退出登录"], type: .QQ, layoutType: .normal, rowHeight: 40.0, delegate: self)
     }
+
+    @IBAction func HomeDolist(_ sender: UIButton) {
+        
+    }
+    
 }
 extension WorktableViewController : JMDropMenuDelegate {
     func didSelectRow(at index: Int, title: String!, image: String!) {
@@ -63,6 +72,16 @@ extension WorktableViewController : JMDropMenuDelegate {
             print(error.localizedDescription)
         }).disposed(by: disposeBag)
     }
+    func HomeDolistData() -> Void {
+        VM.HomeDolist().subscribe(onNext: { (model) in
+            self.Director.text = model.data?.director
+            self.Other.text = model.data?.other
+            self.Welcome_return.text = model.data?.welcome_return
+            self.Mayor.text = model.data?.mayor
+        }, onError: { (error) in
+            print(error.localizedDescription)
+        }).disposed(by: rx.disposeBag)
+    }
 }
 extension WorktableViewController{
     
@@ -77,9 +96,8 @@ extension WorktableViewController{
         if role == "ROLE_DIRECTOR" {
             
         } else {
-            CardView.isHidden = true
-            topview.snp.remakeConstraints({ (mask) in
-                mask.height.equalTo(140)
+            CardView.snp.remakeConstraints({ (mask) in
+                mask.height.equalTo(0)
             })
         }
         name.text = UserDefauTake(Key: ZrealName) as? String
