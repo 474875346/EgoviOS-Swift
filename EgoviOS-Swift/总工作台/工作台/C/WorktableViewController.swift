@@ -41,9 +41,30 @@ class WorktableViewController: BaseViewController {
     @IBAction func SetUp(_ sender: UIButton) {
         JMDropMenu.showFrame(CGRect(x:X(sender)-100, y: YH(sender), width: 130, height: 90), arrowOffset: 110.0, titleArr: ["修改密码","退出登录"], imageArr: ["修改密码","退出登录"], type: .QQ, layoutType: .normal, rowHeight: 40.0, delegate: self)
     }
-
+    
     @IBAction func HomeDolist(_ sender: UIButton) {
-        
+        let VC = OfficialStatisticsViewController()
+        switch sender.tag {
+        case 0:
+            VC.type = "welcome_to_do"
+            VC.leaderType = "1"
+            VC.Title = "市长专件";
+        case 1:
+            VC.type = "welcome_to_do"
+            VC.leaderType = "2"
+            VC.Title = "主任专件";
+        case 2:
+            VC.type = "welcome_to_do"
+            VC.leaderType = "4"
+            VC.Title = "其他公文";
+        case 3:
+            VC.type = "welcome_return"
+            VC.leaderType = ""
+            VC.Title = "退件审批";
+        default:
+            break
+        }
+        self.navigationController?.pushViewController(VC, animated: true)
     }
     
 }

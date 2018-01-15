@@ -16,12 +16,14 @@
 		890CFFED1FF36D95008031EF /* ForwardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890CFFEB1FF36D95008031EF /* ForwardingCollectionViewCell.swift */; };
 		890CFFEE1FF36D95008031EF /* ForwardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 890CFFEC1FF36D95008031EF /* ForwardingCollectionViewCell.xib */; };
 		894B65661FE75C3000FA17F2 /* MessageRefreshViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */; };
+		8959FA68200C323500FC58AD /* OfficialStatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959FA67200C323500FC58AD /* OfficialStatisticsModel.swift */; };
 		896231FE20030154008FEB05 /* AddressBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896231FD20030154008FEB05 /* AddressBookViewModel.swift */; };
 		8962320120030165008FEB05 /* AddressBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896231FF20030165008FEB05 /* AddressBookTableViewCell.swift */; };
 		8962320220030165008FEB05 /* AddressBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8962320020030165008FEB05 /* AddressBookTableViewCell.xib */; };
 		896232042003017E008FEB05 /* AddressBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896232032003017E008FEB05 /* AddressBookModel.swift */; };
 		8963B650200883790087E352 /* OfficialStatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8963B64E200883780087E352 /* OfficialStatisticsViewController.swift */; };
 		8963B651200883790087E352 /* OfficialStatisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8963B64F200883780087E352 /* OfficialStatisticsViewController.xib */; };
+		8963B655200885310087E352 /* OfficialStatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8963B654200885310087E352 /* OfficialStatisticsViewModel.swift */; };
 		8976CE281FFB329D00A74035 /* AttendeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976CE261FFB329D00A74035 /* AttendeesViewController.swift */; };
 		8976CE291FFB329D00A74035 /* AttendeesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8976CE271FFB329D00A74035 /* AttendeesViewController.xib */; };
 		8976CE301FFB32D400A74035 /* AttendeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8976CE2F1FFB32D400A74035 /* AttendeesViewModel.swift */; };
@@ -115,12 +117,14 @@
 		890CFFEB1FF36D95008031EF /* ForwardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		890CFFEC1FF36D95008031EF /* ForwardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForwardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		894B65651FE75C3000FA17F2 /* MessageRefreshViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRefreshViewModel.swift; sourceTree = "<group>"; };
+		8959FA67200C323500FC58AD /* OfficialStatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialStatisticsModel.swift; sourceTree = "<group>"; };
 		896231FD20030154008FEB05 /* AddressBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookViewModel.swift; sourceTree = "<group>"; };
 		896231FF20030165008FEB05 /* AddressBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookTableViewCell.swift; sourceTree = "<group>"; };
 		8962320020030165008FEB05 /* AddressBookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressBookTableViewCell.xib; sourceTree = "<group>"; };
 		896232032003017E008FEB05 /* AddressBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookModel.swift; sourceTree = "<group>"; };
 		8963B64E200883780087E352 /* OfficialStatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialStatisticsViewController.swift; sourceTree = "<group>"; };
 		8963B64F200883780087E352 /* OfficialStatisticsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfficialStatisticsViewController.xib; sourceTree = "<group>"; };
+		8963B654200885310087E352 /* OfficialStatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficialStatisticsViewModel.swift; sourceTree = "<group>"; };
 		8976CE261FFB329D00A74035 /* AttendeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendeesViewController.swift; sourceTree = "<group>"; };
 		8976CE271FFB329D00A74035 /* AttendeesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttendeesViewController.xib; sourceTree = "<group>"; };
 		8976CE2F1FFB32D400A74035 /* AttendeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendeesViewModel.swift; sourceTree = "<group>"; };
@@ -266,6 +270,14 @@
 			path = M;
 			sourceTree = "<group>";
 		};
+		8959FA66200C321D00FC58AD /* M */ = {
+			isa = PBXGroup;
+			children = (
+				8959FA67200C323500FC58AD /* OfficialStatisticsModel.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
 		896231EE20030053008FEB05 /* C */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +324,8 @@
 		8963B64D2008832A0087E352 /* 公文统计 */ = {
 			isa = PBXGroup;
 			children = (
+				8959FA66200C321D00FC58AD /* M */,
+				8963B6532008850D0087E352 /* VM */,
 				8963B6522008839C0087E352 /* C */,
 			);
 			path = "公文统计";
@@ -324,6 +338,14 @@
 				8963B64F200883780087E352 /* OfficialStatisticsViewController.xib */,
 			);
 			path = C;
+			sourceTree = "<group>";
+		};
+		8963B6532008850D0087E352 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				8963B654200885310087E352 /* OfficialStatisticsViewModel.swift */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 		8976CE251FFB326700A74035 /* 回复人员 */ = {
@@ -901,6 +923,7 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LYEmptyView/LYEmptyView.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
@@ -929,6 +952,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LYEmptyView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
@@ -1003,10 +1027,12 @@
 				897DFB92200457E2007D7BA0 /* AddressGetAllUserByDeptModel.swift in Sources */,
 				897DFB98200468D7007D7BA0 /* ContactDetailsModel.swift in Sources */,
 				89CF56C81FE39E3700C5F60D /* SwiftMessageManager.swift in Sources */,
+				8963B655200885310087E352 /* OfficialStatisticsViewModel.swift in Sources */,
 				890CFFE91FF36C8B008031EF /* ForwardingTableViewCell.swift in Sources */,
 				896231FE20030154008FEB05 /* AddressBookViewModel.swift in Sources */,
 				89CF56E71FE3B71D00C5F60D /* MessageModel.swift in Sources */,
 				897DFB9B20046D18007D7BA0 /* AddressGetUserByDeptIdViewController.swift in Sources */,
+				8959FA68200C323500FC58AD /* OfficialStatisticsModel.swift in Sources */,
 				8976CE4A1FFB7DC600A74035 /* AttendeesTableViewCell.swift in Sources */,
 				898857A21FE9063500160D3F /* AttachmentViewController.swift in Sources */,
 				89CF56C51FE39E3700C5F60D /* Model.swift in Sources */,
